@@ -3,61 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Fitness</title>
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <section>
-
+        <!-- ********* HEADER ********* -->
         <header>
-            <img src="img/logo.png" alt="Fitness logo" />
+            <a class="logo-link" href="#">
+                <img class="logo" src="img/logo.png" alt="Fitness logo">
+            </a>
         </header>
 
+        <!-- ********* TOP NAVIGATION ********* -->
         <nav class="top-nav clearfix">
-            <ul>
-                <li><a class="top-nav-item1" href="#">Главная</a></li>
-                <li class="top-nav-active"><a class="top-nav-item2" href="#">Товары</a></li>
-                <li><a class="top-nav-item3" href="#">О_нас</a></li>
-                <li><a class="top-nav-item4" href="#">Контакты</a></li>
-            </ul>
+            <a class="top-nav-link" href="#">Главная</a>
+            <a class="top-nav-link top-nav-active-link" href="#">Товары</a>
+            <a class="top-nav-link" href="#">О_нас</a>
+            <a class="top-nav-link" href="#">Контакты</a>
         </nav>
 
+        <!-- ********* CONTENT ********* -->
         <div class="content clearfix">
 
+            <!-- ********* side navigation ********* -->
             <nav class="side-nav">
-                <a href="#">Ноутбуки</a>
-                <a href="#">Планшеты</a>
-                <a class="side-nav-active" href="#">Телефоны</a>
-                <a href="#">Телевизоры</a>
-                <a href="#">Бытовая техника</a>
-                <a href="#">Автотовары</a>
+                <a class="side-nav-link" href="#">Ноутбуки</a>
+                <a class="side-nav-link" href="#">Планшеты</a>
+                <a class="side-nav-link side-nav-active-link" href="#">Телефоны</a>
+                <a class="side-nav-link" href="#">Телевизоры</a>
+                <a class="side-nav-link" href="#">Бытовая техника</a>
+                <a class="side-nav-link" href="#">Автотовары</a>
             </nav>
 
+            <!-- ********* article ********* -->
             <article>
-                <img src="img/bike.jpg" alt="A mountain bike">
-                <p>Lorem Ipsum - це текст-"риба", що використовується
-                    в друкарстві та дизайні. Lorem Ipsum є, фактично,
-                    стандартною "рибою" аж з XVI сторіччя, коли
-                    невідомий друкар взяв шрифтову гранку та склав
-                    на ній підбірку зразків шрифтів. "Риба" не тільки
-                    успішно пережила п'ять століть, але й прижилася
-                    в електронному верстуванні, залишаючись по суті
-                    незмінною. Вона популяризувалась в 60-их роках
-                    минулого сторіччя завдяки виданню зразків шрифтів
-                    Letraset, які містили уривки з Lorem Ipsum,
-                    і вдруге - нещодавно завдяки програмам
-                    комп'ютерного верстування на кшталт Aldus Pagemaker,
-                    які використовували різні версії Lorem Ipsum.</p>
+                <img class="article-img" src="img/bike.jpg" alt="A mountain bike">
+                <p class="article-text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
             </article>
         </div>
 
+        <!-- ********* FOOTER ********* -->
         <footer class="clearfix">
+
+            <!-- ********* bottom navigation ********* -->
             <nav class="bottom-nav">
-                <a class="bottom-nav-item1" href="#">Главная</a>
-                <a class="bottom-nav-item2 active" href="#">Товары</a>
-                <a class="bottom-nav-item3" href="#">О_нас</a>
-                <a class="bottom-nav-item4" href="#">Контакты</a>
+                <a class="bottom-nav-link" href="#">Главная</a>
+                <a class="bottom-nav-link bottom-nav-active-link" href="#">Товары</a>
+                <a class="bottom-nav-link" href="#">О_нас</a>
+                <a class="bottom-nav-link" href="#">Контакты</a>
             </nav>
+
+            <!-- ********* copyright ********* -->
             <span class="copyright">2014 &copy; All rights reserved</span>
         </footer>
 
