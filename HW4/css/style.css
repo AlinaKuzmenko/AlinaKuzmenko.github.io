@@ -1,0 +1,292 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #0c739f;
+	background-image: url("../img/background.jpg");
+	background-repeat: repeat-x;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+.page {
+	background-color: #ffffff;
+	width: 1000px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 10px 1px #454545;
+}
+
+.page header {
+	z-index: 20;
+	height: 175px;
+	position: relative;
+}
+
+.page header img {
+	float: left;
+	height: 164px;
+	width: 283px;
+	margin-top: 11px;
+	margin-left: 28px;
+}
+
+.page header .contact-info {
+	float: right;
+	margin-top: 11px;
+	margin-right: 33px;
+}
+
+.page header .contact-info .contacts {
+	display: block;
+	padding-bottom: 2px;
+	color: #128aa7;
+	text-shadow: 1px 1px #d9ecf1;
+	font-weight: 100;
+}
+
+.page header .contact-info > :first-child {
+	padding-bottom: 5px;
+}
+
+.page header .right-nav {
+	clear: right;
+	position: absolute;
+	right: 30px;
+	bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.page header .right-nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.page header .right-nav ul li {
+	float: left;
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 65px;
+	width: 57px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+}
+
+.page header .right-nav ul li a {
+	display: block;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	text-decoration: underline;
+	color: #128aa7;
+	font-size: 10px;
+}
+
+.page header .right-nav ul > :nth-child(1) {
+	background-image: url("../img/india.png");
+}
+
+.page header .right-nav ul > :nth-child(2) {
+	background-image: url("../img/nepal.png");
+}
+
+.page header .right-nav ul > :nth-child(3) {
+	background-image: url("../img/tibet.png");
+}
+
+.page header .right-nav ul > :nth-child(4) {
+	background-image: url("../img/bhutan.png");
+}
+
+.page header .right-nav ul > :nth-child(5) {
+	background-image: url("../img/sri-lanka.png");
+}
+
+.page header .right-nav ul > :nth-child(6) {
+	background-image: url("../img/maldives.png");
+}
+
+.page header .big-img {
+	height: 235px;
+	width: 100%;
+	margin: 0px;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #138aa7;
+}
+
+.page header .main-nav {
+	z-index: 10;
+	clear: both;
+	margin: 0px;
+	height: 34px;
+	background-image: url("../img/menu-panel.png");
+	background-size: contain;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.page header .main-nav .main-menu, .page header .main-nav .main-submenu {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	height: 34px;
+}
+
+.page header .main-nav .main-menu li, .page header .main-nav .main-submenu li {
+	float: left;
+	position: relative;
+}
+
+.page header .main-nav .main-menu li .arrow, .page header .main-nav .main-submenu li .arrow {
+	float: left;
+	height: 6px;
+	width: 5px;
+	margin: 0px;
+	padding: 12px 0px 0px 8px;
+	line-height: 30px;
+}
+
+.page header .main-nav .main-menu li a, .page header .main-nav .main-submenu li a {
+	float: left;
+	padding-left: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #ffffff;
+	text-shadow: 1px 0px 1px #adadad;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.page header .main-nav .main-menu li .main-submenu, .page header .main-nav .main-submenu li .main-submenu {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 100%;
+	background-color: #303030;
+}
+
+.page header .main-nav .main-menu li .main-submenu li, .page header .main-nav .main-submenu li .main-submenu li {
+	box-sizing: border-box;
+	display: block;
+	height: 30px;
+	width: 100%;
+	background-color: #303030;
+}
+
+.page header .main-nav .main-menu li:hover > .main-submenu, .page header .main-nav .main-submenu li:hover > .main-submenu {
+	display: block;
+}
+
+.page header .main-nav .main-menu > :nth-child(1) > :nth-child(1) {
+	padding-left: 57px;
+}
+
+.page header .main-nav ul > :nth-child(1) {
+	width: 165px;
+}
+
+.page header .main-nav ul > :nth-child(2) {
+	width: 140px;
+}
+
+.page header .main-nav ul > :nth-child(3) {
+	width: 110px;
+}
+
+.page header .main-nav ul > :nth-child(4) {
+	width: 125px;
+}
+
+.page header .main-nav ul > :nth-child(5) {
+	width: 175px;
+}
+
+.page header .main-nav ul > :nth-child(6) {
+	width: 90px;
+}
+
+.page header .main-nav ul > :nth-child(7) {
+	width: 120px;
+}
+
+.page .main-section {
+	clear: both;
+	position: relative;
+}
+
+.page .main-section .content {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.page .main-section .content .info,
+.page .main-section .content article,
+.page .main-section .content .news {
+	float: left;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+.page .main-section .content .info h3,
+.page .main-section .content .info p,
+.page .main-section .content article h3,
+.page .main-section .content article p,
+.page .main-section .content .news h3,
+.page .main-section .content .news p {
+	text-align: center;
+}
+
+.page .main-section .content .info h3,
+.page .main-section .content article h3,
+.page .main-section .content .news h3 {
+	color: #424c43;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.page .main-section .content .info p,
+.page .main-section .content article p,
+.page .main-section .content .news p {
+	font-size: 14px;
+	font-weight: 100;
+}
+
+.page .main-section .content .info,
+.page .main-section .content .news {
+	width: 208px;
+	background-color: #edeef0;
+	border-left: 1px solid #c7cacf;
+	border-right: 1px solid #c7cacf;
+	color: #424c43;
+	text-shadow: 0px 0px 2px #abaead;
+}
+
+.page .main-section .content article {
+	width: 544px;
+	height: 100px;
+	margin-left: 18px;
+	margin-right: 18px;
+}
+
+.copyright {
+	display: block;
+	width: 220px;
+	margin: 0px auto;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}

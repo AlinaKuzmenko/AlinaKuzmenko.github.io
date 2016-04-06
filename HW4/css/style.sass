@@ -1,0 +1,238 @@
+body
+    margin: 0px
+    padding: 0px
+    background-color: #0c739f
+    background:
+        image: url("../img/background.jpg")
+        repeat: repeat-x
+    font-family: Tahoma, Geneva, sans-serif
+    font-size: 12px
+
+.page
+    background-color: #ffffff
+    width: 1000px
+    margin: 0 auto
+    box-shadow: 0px 0px 10px 1px #454545
+
+    header
+        z-index: 20
+        height: 175px
+        position: relative
+        img
+            float: left
+            height: 164px
+            width: 283px
+            margin-top: 11px
+            margin-left: 28px
+        .contact-info
+            float: right
+            margin-top: 11px
+            margin-right: 33px
+
+            .contacts
+                display: block
+                padding-bottom: 2px
+                color: #128aa7
+                text-shadow: 1px 1px #d9ecf1
+                font-weight: 100
+
+        .contact-info > :first-child
+            padding-bottom: 5px
+
+        .right-nav
+            clear: right
+            position: absolute
+            right: 30px
+            bottom: 0px
+            margin: 0px
+            padding: 0px
+
+            ul
+                margin: 0px
+                padding: 0px
+                list-style: none
+
+                li
+                    float: left
+                    padding-left: 0px
+                    padding-right: 0px
+                    height: 65px
+                    width: 57px
+                    background:
+                        position: center top
+                        repeat: no-repeat
+                    text-align: center
+                    position: relative
+
+                    a
+                        display: block
+                        position: absolute
+                        left: 0px
+                        right: 0px
+                        bottom: 10px
+                        text-decoration: underline
+                        color: #128aa7
+                        font-size: 10px
+
+            ul > :nth-child(1)
+                background-image: url("../img/india.png")
+
+            ul > :nth-child(2)
+                background-image: url("../img/nepal.png")
+
+            ul > :nth-child(3)
+                background-image: url("../img/tibet.png")
+
+            ul > :nth-child(4)
+                background-image: url("../img/bhutan.png")
+
+            ul > :nth-child(5)
+                background-image: url("../img/sri-lanka.png")
+
+            ul > :nth-child(6)
+                background-image: url("../img/maldives.png")
+
+        .big-img
+            height: 235px
+            width: 100%
+            margin: 0px
+            border-top: 1px solid #128aa7
+            border-bottom: 1px solid #138aa7
+
+        .main-nav
+            z-index: 10
+            clear: both
+            margin: 0px
+            height: 34px
+            background:
+                image: url("../img/menu-panel.png")
+                size: contain
+                position: center bottom
+                repeat: no-repeat
+            font-size: 14px
+            line-height: 30px
+
+            .main-menu, .main-submenu
+                margin: 0px
+                padding: 0px
+                list-style: none
+                height: 34px
+
+                li
+                    float: left
+                    position: relative
+                    .arrow
+                        float: left
+                        height: 6px
+                        width: 5px
+                        margin: 0px
+                        padding: 12px 0px 0px 8px
+                        line-height: 30px
+                    a
+                        float: left
+                        padding-left: 10px
+                        box-sizing: border-box
+                        text-decoration: none
+                        color: #ffffff
+                        text-shadow: 1px 0px 1px #adadad
+                        font-size: 14px
+                        line-height: 30px
+
+                    .main-submenu
+                        display: none
+                        position: absolute
+                        top: 30px
+                        left: 0px
+                        width: 100%
+                        background-color: #303030
+                        li
+                            box-sizing: border-box
+                            display: block
+                            height: 30px
+                            width: 100%
+                            background-color: #303030
+                            a
+
+
+                li:hover > .main-submenu
+                    display: block
+
+
+
+            .main-menu > :nth-child(1) > :nth-child(1)
+                padding-left: 57px
+
+            ul > :nth-child(1)
+                width: 165px
+
+            ul > :nth-child(2)
+                width: 140px
+
+            ul > :nth-child(3)
+                width: 110px
+
+            ul > :nth-child(4)
+                width: 125px
+
+            ul > :nth-child(5)
+                width: 175px
+
+            ul > :nth-child(6)
+                width: 90px
+
+            ul > :nth-child(7)
+                width: 120px
+
+    .main-section
+        clear: both
+        position: relative
+
+        .content
+            margin: 0px
+            padding: 0px
+            width: 100%
+            overflow: hidden
+
+            .info,
+            article,
+            .news,
+                float: left
+                padding-bottom: 20000px
+                margin-bottom: -20000px
+                h3,
+                p
+                    text-align: center
+                h3
+                    color: #424c43
+                    font-size: 18px
+                    font-weight: 700
+                p
+                    font-size: 14px
+                    font-weight: 100
+            .info,
+            .news
+                width: 208px
+                background-color: #edeef0
+                border:
+                    left: 1px solid #c7cacf
+                    right: 1px solid #c7cacf
+                color: #424c43
+                text-shadow: 0px 0px 2px #abaead
+            article
+                width: 544px
+                height: 100px
+                margin-left: 18px
+                margin-right: 18px
+
+.copyright
+    display: block
+    width: 220px
+    margin: 0px auto
+    color: #ffffff
+    text-align: center
+    line-height: 35px
+
+.clearfix:after
+    content: ''
+    clear: both
+    display: block
