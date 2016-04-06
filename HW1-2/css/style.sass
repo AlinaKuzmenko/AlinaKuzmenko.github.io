@@ -20,43 +20,46 @@ body
 section
     width: 512px
     margin: 4px auto 43px
-    padding: 49px 40px 66px
+    padding: 50px 40px 66px
     background: #fff
     -moz-box-shadow: 0 0 5px 1px #ccc
     -webkit-box-shadow: 0 0 5px 1px #ccc
     box-shadow: 0 0 5px 1px #ccc
     box-sizing: border-box
 
+.container:nth-child(1),
+.container:nth-child(2),
+.container:nth-child(3)
+    width: 412px
+    border-bottom: 1px solid #000
+    box-sizing: border-box
+
+.container:nth-child(2),
+.container:nth-child(3),
+.container:nth-child(4)
+    margin: 0 0 0 10px
+
+.container:nth-child(1)
+    margin: 0 auto
+
 .name
-    margin-left: 2px
     font-size: 22px
     font-weight: bold
     text-align: center
 
 .image
-    width: 140px
-    height: 127px
-    margin: 21px auto 13px
-    background:
-        image: url('../images/photo.png')
-        repeat: no-repeat
-        position: 0 0
-        size: contain
+    display: block
+    width: 134px
+    height: 128px
+    margin: 21px auto 12px
+    padding-right: 8px
 
-.position
-    width: 411px
-    margin: 0 auto
-    padding-bottom: 17px
-    padding-left: 13px
-    border-bottom: 1px solid #000
+.position-text
+    padding: 0 10px 17px 13px
     letter-spacing: .22px
-    box-sizing: border-box
 
-.reasons
-    width: 412px
-    margin: 0 0 0 10px
+.container:nth-child(2)
     padding: 26px 0 20px 13px
-    border-bottom: 1px solid #000
     box-sizing: border-box
 
 .reasons-text
@@ -69,14 +72,11 @@ section
     font-size: 18px
 
 .reasons-item
-        margin-top: 8px
-        line-height: 18px
+    margin-top: 8px
+    line-height: 18px
 
-.contacts
-    width: 412px
-    margin: 0 0 0 10px
+.container:nth-child(3)
     padding: 27px 0 19px 13px
-    border-bottom: 1px solid #000
     box-sizing: border-box
 
 .phone-text,
@@ -102,9 +102,7 @@ section
     color: #0000f3
     text-decoration: underline
 
-.feedback
-    width: 412px
-    margin: 0 0 0 10px
+.container:nth-child(4)
     padding: 27px 0 0 13px
     box-sizing: border-box
 
