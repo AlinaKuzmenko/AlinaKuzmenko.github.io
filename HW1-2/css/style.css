@@ -4,83 +4,65 @@ div,
 p,
 h1,
 ul,
-li,
-a {
+li {
     margin: 0;
     padding: 0;
-}
-
-a {
-    display: block;
 }
 
 body {
     background: #eee;
     font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
+    box-sizing: border-box;
 }
 
 section {
-    width: 512px;
+    width: 432px;
     margin: 4px auto 43px;
-    padding: 50px 40px 66px;
+    padding: 25px 40px 50px;
     background: #fff;
     -moz-box-shadow: 0 0 5px 1px #ccc;
     -webkit-box-shadow: 0 0 5px 1px #ccc;
     box-shadow: 0 0 5px 1px #ccc;
-    box-sizing: border-box;
 }
 
-.container:nth-child(1),
-.container:nth-child(2),
-.container:nth-child(3) {
-    width: 412px;
-    border-bottom: 1px solid #000;
-    box-sizing: border-box;
-}
-
-.container:nth-child(2),
-.container:nth-child(3),
-.container:nth-child(4) {
-    margin: 0 0 0 10px;
-}
-
-.container:nth-child(1) {
+.container {
+    width: 399px;
     margin: 0 auto;
+    padding: 25px 0 16px 13px;
+    border-bottom: 1px solid #000;
 }
 
 .name {
+    padding-right: 12px;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
 
-.image {
+.photo {
     display: block;
     width: 134px;
     height: 128px;
-    margin: 21px auto 12px;
-    padding-right: 8px;
+    margin: 20px auto 13px;
+    padding-right: 20px;
+}
+
+.main-text {
+    font-size: 18px;
 }
 
 .position-text {
-    padding: 0 10px 17px 13px;
     letter-spacing: .22px;
 }
 
-.container:nth-child(2) {
-    padding: 26px 0 20px 13px;
-    box-sizing: border-box;
-}
-
-.reasons-text {
+.reasons {
     margin: 0 0 32px;
-    border: 0;
     letter-spacing: .3px;
 }
 
 .reasons-list {
-    margin: 0 0 0 24px;
+    margin: 0 0 4px 24px;
     font-size: 18px;
 }
 
@@ -89,21 +71,16 @@ section {
     line-height: 18px;
 }
 
-.container:nth-child(3) {
-    padding: 27px 0 19px 13px;
-    box-sizing: border-box;
-}
-
-.phone-text,
+.phone,
 .phone-number,
-.vk-text,
+.vk,
 .vk-link,
-.feedback-text {
+.feedback {
     line-height: 17px;
 }
 
-.phone-text {
-    margin: 0 0 9px;
+.phone {
+    margin: 2px 0 9px;
     letter-spacing: .38px;
 }
 
@@ -112,23 +89,23 @@ section {
     letter-spacing: .3px;
 }
 
-.vk-text {
+.vk {
     margin: 0 0 10px;
     letter-spacing: .3px;
 }
 
 .vk-link {
+    display: inline-block;
     color: #0000f3;
     text-decoration: underline;
 }
 
-.container:nth-child(4) {
-    padding: 27px 0 0 13px;
-    box-sizing: border-box;
+.feedback-container {
+    border: 0;
 }
 
-.feedback-text {
-    margin: 0 0 10px;
+.feedback {
+    margin: 2px 0 9px;
     letter-spacing: .32px;
 }
 
