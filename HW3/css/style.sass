@@ -10,9 +10,6 @@ p,
     margin: 0
     padding: 0
 
-a
-    display: block
-
 body
     background-color: #f9f9f9
     font-family: 'Open Sans', Helvetica, sans-serif
@@ -30,6 +27,7 @@ header
     margin: 0 -1px 35px
 
 .header_logo-link
+    display: block
     width: 143px
 
 .header_logo-image
@@ -47,6 +45,7 @@ header
     font-size: 0
 
 .top-nav_link
+    display: block
     height: 40px
     float: left
     border:
@@ -58,27 +57,38 @@ header
     text-decoration: none
     text-shadow: .5px .8px 1px rgba(0, 0, 0, .5)
 
-.top-nav_link:nth-child(1)
+.top-nav_link_main
     width: 120px
     padding-left: 23px
 
-.top-nav_link:nth-child(2)
+.top-nav_link_goods
     width: 98px
-
-.top-nav_link:nth-child(3)
-    width: 166px
-
-.top-nav_link:nth-child(4)
-    width: 113px
-
-.top-nav_link:nth-child(2),
-.top-nav_link:nth-child(3),
-.top-nav_link:nth-child(4)
     margin-left: -1px
     padding-left: 1px
     text-align: center
 
-.top-nav_link:hover,
+.top-nav_link_about-us
+    width: 166px
+    margin-left: -1px
+    padding-left: 1px
+    text-align: center
+
+.top-nav_link_contacts
+    width: 113px
+    margin-left: -1px
+    padding-left: 1px
+    text-align: center
+
+.top-nav_link:hover
+    border:
+        right: 1px solid #838383
+        left: 1px solid #838383
+    background: #494949
+    background: -webkit-linear-gradient(#494949, #2e2e2e)
+    background: -o-linear-gradient(#494949, #2e2e2e)
+    background: -moz-linear-gradient(#494949, #2e2e2e)
+    background: linear-gradient(#494949, #2e2e2e)
+
 .top-nav_active-link
     border:
         right: 1px solid #838383
@@ -94,7 +104,6 @@ header
     position: relative
     padding-top: 40px
 
-
 /* ********* CONTENT ********* */
 /* ********* side navigation ********* */
 .side-nav
@@ -106,6 +115,7 @@ header
     background-color: #fff
 
 .side-nav_link
+    display: block
     width: 100%
     height: 40px
     padding-left: 22px
@@ -115,21 +125,25 @@ header
     line-height: 39px
     text-decoration: none
     box-sizing: border-box
-    //text-shadow: 1px 0 1px #dcdcdc
 
-.side-nav_link:nth-child(1)
+.side-nav_link_laptops
     height: 39px
     padding-top: 1px
     letter-spacing: .3px
 
-.side-nav_link:nth-child(2)
+.side-nav_link_tablets
     line-height: 40px
 
-.side-nav_link:nth-child(6)
+.side-nav_link_for-cars
     height: 39px
     border: 0
 
-.side-nav_link:hover,
+.side-nav_link:hover
+    padding-left: 35px
+    background-color: #f9f9f9
+    color: #2c2c2c
+    text-shadow: 1px 0 1px #cecece
+
 .side-nav_active-link
     padding-left: 35px
     background-color: #f9f9f9
@@ -175,19 +189,21 @@ footer
     text-decoration: none
     text-shadow: 1px 0 1px #bbb
 
-.bottom-nav_link:nth-child(1)
+.bottom-nav_link_main
     padding: 0 25px
 
-.bottom-nav_link:nth-child(2)
+.bottom-nav_link_goods
     padding: 0 65px 0 64px
 
-.bottom-nav_link:nth-child(3)
+.bottom-nav_link_about-us
     padding: 0 25px
 
-.bottom-nav_link:nth-child(4)
+.bottom-nav_link_contacts
     padding: 0 65px
 
-.bottom-nav_link:hover,
+.bottom-nav_link:hover
+    text-decoration: underline
+    
 .bottom-nav_active-link
     text-decoration: underline
 
