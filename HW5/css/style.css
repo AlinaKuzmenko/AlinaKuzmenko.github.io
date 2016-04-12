@@ -1,314 +1,306 @@
+body,
+div,
+fieldset,
+form,
+h3,
+input,
+nav,
+p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 1060px;
-	margin: 0px;
-	padding: 0px;
-	background-image: url("../img/background.jpg");
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-family: "Helvetica Neue", Geneva, sans-serif;
-	font-size: 14px;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    font-family: 'Helvetica Neue', Geneva, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
-a {
-	color: #60b5ed;
-	text-decoration: none;
-	display: block;
+/* ********* HEADER ********* */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 36px;
+    padding: 0 83px 0 42px;
+    background-image: url('../img/nav-background.png');
+    background-repeat: repeat;
+    background-size: cover;
+    box-sizing: border-box;
 }
 
-ul {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
+/* ********* navigation ********* */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 400px;
+    height: 31px;
+    padding-right: 6px;
+    border-right: 1px solid #56a2dc;
 }
 
-nav {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	padding-right: 20px;
-	height: 36px;
-	width: 100%;
-	box-sizing: border-box;
-	background-image: url("../img/nav-background.png");
-	background-repeat: repeat;
-	background-size: cover;
+.nav_element {
+    color: #60b5ed;
+    line-height: 31px;
+    text-decoration: none;
 }
 
-nav .menu,
-nav .profile-bar {
-	display: flex;
+.nav_element_my-youbike {
+    margin: 0;
+    padding: 0 14px;
 }
 
-nav .menu {
-	width: 844px;
-	justify-content: flex-end;
-	border-right: 1px solid #56a2dc;
-	height: 31px;
+.nav_element_vender {
+    margin: 0;
+    padding: 0 15px;
 }
 
-nav .menu li a {
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 31px;
+.nav_element_forum {
+    margin: 0;
+    padding: 0 13px;
 }
 
-nav .menu .menu-active {
-	position: relative;
-	top: -3px;
-	height: 36px;
-	background-color: #4eabda;
+.nav_element_contacts {
+    margin: 0 3px 0 0;
+    padding: 0 15px;
 }
 
-nav .menu .menu-active a {
-	color: #fff;
-	text-shadow: 0px 0px 1px #fff;
-	line-height: 36px;
+.nav_element_help {
+    margin: 0;
+    padding: 0 15px;
 }
 
-nav .profile-bar {
-	width: 371px;
-	border-left: 1px solid #56a2dc;
+.nav_element:hover {
+    position: relative;
+    /* HARDCODE?????????????????????????????????????????*/
+    top: -3px;
+    height: 36px;
+    background-color: #4eabda;
+    color: #fff;
+    line-height: 36px;
+    text-shadow: 0 0 1px #fff;
 }
 
-nav .profile-bar .my-offers img,
-nav .profile-bar .login img {
-	height: 15px;
-	width: 14px;
-	padding-top: 8px;
-	padding-left: 19px;
-	padding-right: 10px;
+.nav_element_active {
+    position: relative;
+    /* HARDCODE?????????????????????????????????????????*/
+    top: -3px;
+    height: 36px;
+    background-color: #4eabda;
+    color: #fff;
+    line-height: 36px;
+    text-shadow: 0 0 1px #fff;
 }
 
-nav .profile-bar .my-offers a,
-nav .profile-bar .login a {
-	display: inline-block;
-	line-height: 31px;
-	color: #fff;
-	text-decoration: underline;
+/* ********* profile bar ********* */
+.profile-bar {
+    display: flex;
+    width: 380px;
+    border-left: 1px solid #56a2dc;
 }
 
-nav .profile-bar .login {
-	width: 189px;
+.profile-bar_flag {
+    width: 21px;
+    height: 22px;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-left: 19px;
 }
 
-nav .profile-bar .login p {
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-	color: #fff;
+.profile-bar_link {
+    display: inline-block;
+    color: #fff;
+    line-height: 31px;
+    text-decoration: underline;
 }
 
-nav .profile-bar .my-offers {
-	display: flex;
+.profile-bar_link_my-offers {
+    width: 100px;
 }
 
-nav .profile-bar .my-offers > a {
-	padding-left: 10px;
-	padding-right: 20px;
-	line-height: 31px;
-	color: #fff;
+.profile-bar_login {
+    width: 189px;
+    color: #fff;
 }
 
-nav .profile-bar .login-active {
-	position: absolute;
-	top: 0px;
-	height: 36px;
-	background-image: url("../img/login-background.png");
-	line-height: 36px;
+.profile-bar_login_account {
+    position: absolute;
+    top: 0;
+    width: 177px;
+    height: 36px;
+    margin-left: 11px;
+    padding-left: 13px;
+    background-image: url('../img/login-background.png');
+    color: #fff;
+    line-height: 36px;
 }
 
-nav .profile-bar .login-active > a {
-	height: 36px;
-	color: #fff;
-	line-height: 36px;
-	padding-left: 13px;
-	padding-right: 13px;
+/* ********* REGISTRATION FORM ********* */
+.registration-block {
+    width: 560px;
+    margin: 213px auto;
+    background-color: rgba(0, 0, 0, .6);
+    box-sizing: border-box;
 }
 
-.registration-form {
-	width: 560px;
-	box-sizing: border-box;
-	background-color: rgba(0, 0, 0, 0.6);
+/* ********* Facebook registration form ********* */
+.registration-block_form {
+    margin-top: 36px;
 }
 
-.registration-form header h3 {
-	display: block;
-	margin: 0px;
-	padding: 0px;
-	height: 62px;
-	width: 100%;
-	border-bottom: 2px solid #b0b8a5;
-	color: #fff;
-	font-size: 24px;
-	line-height: 62px;
-	text-align: center;
+.registration-block_header {
+    display: block;
+    width: 100%;
+    height: 62px;
+    border-bottom: 2px solid #afb8a4;
+    color: #fff;
+    font-size: 24px;
+    line-height: 62px;
+    text-align: center;
 }
 
-.registration-form .form .fb-login {
-	display: block;
-	position: relative;
-	width: 276px;
-	height: 34px;
-	margin: 0px auto;
-	margin-top: 36px;
-	background: linear-gradient(#3e5694, #304274);
-	border-radius: 3px;
-	border-top: 1px solid #758ab7;
-	color: #d9ecf1;
+.registration-block_fb-login-link {
+    display: block;
+    position: relative;
+    width: 276px;
+    height: 34px;
+    margin: 0 auto;
+    border-top: 1px solid #758ab7;
+    border-radius: 3px;
+    background: linear-gradient(#3e5694, #304274);
+    color: #d9ecf1;
 }
 
-.registration-form .form .fb-login .fb-logo {
-	display: inline-block;
-	height: 34px;
-	width: 36px;
-	margin-left: 2px;
-	border-radius: 3px/0px;
-	border-right: 1px solid #213c71;
+.registration-block_fb-login-link:hover {
+    background: linear-gradient(#304274, #3e5694);
 }
 
-.registration-form .form .fb-login .fb-logo img {
-	display: inline;
-	height: 22px;
-	width: 11px;
-	margin: 5px 12px 4px 13px;
-	line-height: 34px;
+.registration-block_fb-logo {
+    display: inline-block;
+    width: 11px;
+    height: 22px;
+    margin: 5px 12px 4px 13px;
+    border-radius: 3px/0;
+    line-height: 34px;
 }
 
-.registration-form .form .fb-login .log-in-fb {
-	display: inline-block;
-	position: absolute;
-	top: 0px;
-	left: 39px;
-	height: 34px;
-	width: 181px;
-	padding-left: 32px;
-	border-radius: 0px/3px;
-	border-left: 1px solid #4c68a9;
-	line-height: 34px;
+.registration-block_fb-log-in {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 39px;
+    width: 181px;
+    height: 34px;
+    padding-left: 32px;
+    border-left: 1px solid #4c68a9;
+    border-radius: 0/3px;
+    line-height: 34px;
 }
 
-.registration-form .form .fb-login .right-arrow {
-	display: inline-block;
-	position: absolute;
-	top: 0px;
-	left: 208px;
-	height: 34px;
-	width: 56px;
+.registration-block_right-arrow {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 208px;
+    width: 8px;
+    height: 12px;
+    padding: 11px 23px;
 }
 
-.registration-form .form .fb-login .right-arrow img {
-	display: inline-block;
-	height: 12px;
-	width: 8px;
-	padding: 11px 23px;
+/* ********* separation block ********* */
+.registration-block_separation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+    color: #999;
+    font-size: 14px;
+    text-shadow: 0 0 1px #999;
 }
 
-.registration-form .form .fb-login:hover {
-	background: linear-gradient(#304274, #3e5694);
+.registration-block_separation-line {
+    display: inline;
+    width: 123px;
+    height: 2px;
+    background-image: url('../img/line.png');
+    background-position: center;
+    background-size: cover;
 }
 
-.registration-form .form .separation {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 74px;
-	color: #999;
-	font-size: 14px;
-	text-shadow: 0px 0px 1px #999;
+.registration-block_separation-text {
+    display: block;
+    padding: 0 6px;
 }
 
-.registration-form .form .separation .left-line,
-.registration-form .form .separation .right-line {
-	display: inline;
-	height: 2px;
-	width: 123px;
-	margin: 0px;
-	padding: 0px;
-	background-image: url("../img/line.png");
-	background-position: center;
-	background-size: cover;
+/* ********* website registration form ********* */
+.registration-block_site-form {
+    width: 276px;
+    margin: 0 auto;
+    border: 0;
+    color: rgba(255, 255, 255, .7);
 }
 
-.registration-form .form .separation span {
-	display: block;
-	padding: 0px 6px;
+.registration-block_input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin: 0 0 18px;
+    padding: 0 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #494949;
+    background-color: #000;
+    color: rgba(255, 255, 255, .8);
+    font-size: 14px;
+    line-height: 35px;
+    box-sizing: border-box;
 }
 
-.registration-form .form .reg-fieldset {
-	border: 0px;
-	width: 276px;
-	margin: 0px auto;
-	color: rgba(255, 255, 255, 0.7);
+.registration-block_input:focus {
+    border-bottom: 1px solid #689bcd;
+    background-color: #1b5288;
+    box-shadow: 0 0 6px 1px #689bcc;
 }
 
-.registration-form .form .reg-fieldset input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=file]) {
-	display: block;
-	height: 35px;
-	width: 100%;
-	margin: 0px 0px 19px 0px;
-	padding: 0px 0px 0px 19px;
-	box-sizing: border-box;
-	background-color: #000;
-	border: 0px;
-	border-bottom: 1px solid #494949;
-	font-size: 14px;
-	line-height: 35px;
-	color: rgba(255, 255, 255, 0.8);
+.registration-block_checkbox {
+    text-align: left;
 }
 
-.registration-form .form .reg-fieldset input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=file]):focus {
-	background-color: #1b5288;
-	border-bottom: 1px solid #689bcd;
-	box-shadow: 0px 0px 6px 1px #689bcc;
+.registration-block_text {
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 0 0 0 8px;
 }
 
-.registration-form .form .reg-fieldset #sendUpdates {
-	margin: 0px;
-	padding: 0px;
-	text-align: left;
+.registration-block_submit-button {
+    display: block;
+    width: 152px;
+    height: 36px;
+    margin: 0 auto 18px;
+    border-top: 0;
+    border-right: 1px solid #519fd9;
+    border-bottom: 0;
+    border-left: 1px solid #519fd9;
+    border-radius: 3px;
+    background: linear-gradient(#6bb8e7 5%, #50aedb, #2e7ac4, #3686ca 5%);
+    color: #fff;
+    cursor: pointer;
 }
 
-.registration-form .form .reg-fieldset input[type=submit] {
-	display: block;
-	margin: 20px auto 10px auto;
-	height: 34px;
-	width: 141px;
-	border: 0px;
-	border-top: 0px;
-	border-right: 1px solid #519fd9;
-	border-bottom: 0px;
-	border-left: 1px solid #519fd9;
-	border-radius: 3px;
-	background: linear-gradient(#6bb8e7 5%, #50aedb, #2e7ac4, #3686ca 5%);
-	color: #fff;
-	cursor: pointer;
+.registration-block_submit-button:hover {
+    background: linear-gradient(#3686ca 5%, #50aedb, #2e7ac4, #6bb8e7 5%);
 }
 
-.registration-form .form .reg-fieldset input[type=submit]:hover {
-	background: linear-gradient(#3686ca 5%, #50aedb, #2e7ac4, #6bb8e7 5%);
-}
-
-.registration-form .form .reg-fieldset > span {
-	display: inline-block;
-	padding: 0px 0px 0px 8px;
-	margin: 0px 0px 19px 0px;
-}
-
-.registration-form .form .agreement {
-	width: 310px;
-	margin: 0px;
-	padding: 0px;
-	margin: 0px auto;
-	margin-bottom: 20px;
-	color: rgba(255, 255, 255, 0.7);
-	font-size: 11px;
-	text-align: center;
+.registration-block_agreement {
+    width: 310px;
+    margin: 0 auto;
+    padding-bottom: 17px;
+    color: rgba(255, 255, 255, .7);
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
 }
