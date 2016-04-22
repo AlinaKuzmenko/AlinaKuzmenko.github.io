@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Animals</title>
+		<script src="js/libs/jquery-2.1.4.min.js"></script>
+		<script src="js/libs/handlebars-v3.0.3.js"></script>
+		<script src="js/libs/bootstrap.min.js"></script>
+		<script src="js/AnimalsData.js"></script>
+		<script src="js/script.js"></script>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/assignment.css" rel="stylesheet">
+	</head>
+
+	<body>
+<!-- ********* START NAVIGATION ********* -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#" id="categories-tab">
+							<span class="glyphicon glyphicon-home"></span>
+						Categories</a>
+					</li>
+					<li><a href="#" id="animals-tab">Animals</a></li>
+				</ul>
+			</div>
+		</nav>
+<!-- ********* / NAVIGATION ********* -->
+
+<!-- ********* START ARTICLE ********* -->
+		<article>
+			<div class="container">
+				<div class="page-header">
+					<h1>A Website About Animals</h1>
+				</div>
+			</div>
+
+			<div id="content" class="container-fluid" role="main">
+			</div>
+		</article>
+<!-- ********* / ARTICLE ********* -->
+
+<!-- ********* START TEMPLATES ********* -->
+	<!-- ********* START CATEGORIES TEMPLATE ********* -->
+		<script id="categories-template" type="text/x-handlebars-template">
+			<div class="row">
+				<h3>Animals Categories</h3>
+				<hr>
+				{{#each category}}
+				<div class="col-xs-12 col-md-6 col-lg-4">
+				    <div class="categories-thumbnail"  data-id="{{@index}}">
+				      <div class="caption">
+				          <h4> {{name}} </h4>
+				          <img class="crop-img" src="{{thumbnail}}" alt=""/>
+				          <p>{{animals.length}} animals</p>
+				      </div>
+				    </div>
+				</div> <!-- / col -->
+				{{/each}}
+			</div> <!-- / row -->
+		</script>
+	<!-- ********* / CATEGORIES TEMPLATE ********* -->
+
+	<!-- ********* START ANIMALS TEMPLATE ********* -->
+		<script id="animals-template" type="text/x-handlebars-template">
+			<div class="row">
+			  	<h3>Animals</h3>
+			  	<hr>
+			    {{#each animals}}
+			    <div class="col-xs-12 col-md-6 col-lg-3">
+			        <div class="animals-thumbnail"  data-id="{{@index}}">
+			          <div class="caption">
+			              <h4> {{name}} </h4>
+			              <img class="crop-img" src="{{image1}}" alt=""/>
+			          </div>
+			        </div>
+			    </div> <!-- / col -->
+			    {{/each}}
+			</div> <!-- / row -->
+		</script>
+	<!-- ********* / ANIMALS TEMPLATE ********* -->
+
+	<!-- ********* START ANIMAL TEMPLATE ********* -->
+		<script id="animal-template" type="text/x-handlebars-template">
+		  	<div class="row">
+			  	<h3>Animal</h3>
+			  	<hr>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+			        <div data-id="{{@index}}">
+			        	<h4> {{name}} </h4>
+			        	<div class="caption col-xs-12 col-md-12 col-lg-12">
+				            <p> {{description}} </p>
+				        </div>
+			       		<div class="caption col-xs-12 col-md-12 col-lg-12">
+				            <img class="animal-thumbnail col-xs-12 col-md-6 col-lg-6" src="{{image1}}" alt=""/>
+				            <img class="animal-thumbnail col-xs-12 col-md-6 col-lg-6" src="{{image2}}" alt=""/>
+				        </div>
+			        </div>
+				</div> <!-- / col -->
+
+		  	</div> <!-- / row -->
+		</script>
+	<!-- ********* / ANIMAL TEMPLATE ********* -->
+
+<!-- ********* / TEMPLATES ********* -->
+	</body>
+</html>
