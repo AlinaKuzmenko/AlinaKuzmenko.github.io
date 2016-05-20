@@ -80,7 +80,8 @@ select {
     border-top: 1px solid #a6c3cf;
     border-radius: 3px;
     background: linear-gradient(#1f6787, #0c3357);
-    box-shadow: 5px 6px 3px -3px rgba(0, 0, 0, .4);
+    -webkit-filter: drop-shadow(5px 6px 3px rgba(0, 0, 0, .4));
+    filter: drop-shadow(2px 3px 1px rgba(0, 0, 0, .4));
 }
 
 .login--icon {
@@ -102,9 +103,8 @@ select {
     border-radius: 2px;
     font-size: 11px;
     letter-spacing: .7px;
-    -moz-box-shadow: 0 0 1px 1px #6c7e8c;
-    -webkit-box-shadow: 0 0 1px 1px #6c7e8c;
-    box-shadow: 0 0 1px 1px #6c7e8c;
+    -webkit-filter: drop-shadow(0 0 1px #6c7e8c);
+    filter: drop-shadow(0 0 1px #6c7e8c);
 }
 
 .login-form--password-input {
@@ -116,9 +116,8 @@ select {
     border-radius: 2px;
     font-size: 11px;
     letter-spacing: .7px;
-    -moz-box-shadow: 0 0 1px 1px #6c7e8c;
-    -webkit-box-shadow: 0 0 1px 1px #6c7e8c;
-    box-shadow: 0 0 1px 1px #6c7e8c;
+    -webkit-filter: drop-shadow(0 0 1px #6c7e8c);
+    filter: drop-shadow(0 0 1px #6c7e8c);
 }
 
 .login-form--submit-button {
@@ -195,7 +194,8 @@ select {
     border: 1px solid rgba(36, 43, 74, .8);
     border-radius: 3px;
     background: linear-gradient(#505860, #010101);
-    box-shadow: 1px 2px 5px 0 #50525e;
+    -webkit-filter: drop-shadow(2px 2px 2px #50525e);
+    filter: drop-shadow(2px 2px 2px #50525e);
 }
 
 .nav {
@@ -282,9 +282,8 @@ select {
     border-top: 2px solid #ccc;
     border-left: 2px solid #ccc;
     border-radius: 20px;
-    -moz-box-shadow: 3px 3px 7px 0 #999;
-    -webkit-box-shadow: 3px 3px 7px 0 #999;
-    box-shadow: 3px 3px 7px 0 #999;
+    background-color: #fff;
+    -webkit-filter: drop-shadow(3px 3px 2px #999);
 }
 
 .filter-form--headings-wrapper {
@@ -418,6 +417,12 @@ select {
     line-height: 9px;
 }
 
+.filter-form--by-car select {
+    -moz-box-shadow: inset 1px 1px 1px #555;
+    -webkit-box-shadow: inset 1px 1px 1px #555;
+    box-shadow: inset 1px 1px 1px #555;
+}
+
 .filter-form--by-car .filter-form--submit-button {
     margin: 4px 20px 0 0;
 }
@@ -441,6 +446,12 @@ select {
     margin: 4px 8px 0 0;
     line-height: 9px;
     text-align: right;
+}
+
+.filter-form--by-tyres select {
+    -moz-box-shadow: inset 0 0 2px #777;
+    -webkit-box-shadow: inset 0 0 2px #777;
+    box-shadow: inset 0 0 2px #777;
 }
 
 .filter-form--by-tyres .filter-form--checkbox-container-label {
