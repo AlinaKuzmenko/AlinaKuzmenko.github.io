@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+h1 {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.main-nav {
+    margin: 20px 0;
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.main-nav-link:link {
+    color: #f00923;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.main-nav-link:visited {
+    color: #f00923;
+}
+
+.main-nav-link:hover {
+    color: #ff0c10;
+}
+
+.main-nav-link:active {
+    color: #000;
+}
+
+/*styles for task #1*/
+.texts-nav {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 0 0;
+    background-color: #16282e;
+}
+
+.tabs {
+    display: block;
+    width: 25%;
+    margin: 0 5px;
+    padding: 0 0 0 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #dadada;
+    font-variant: small-caps;
+    line-height: 40px;
+    text-decoration: none;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+}
+
+.tabs:hover {
+    color: #dadada;
+    opacity: .8;
+}
+
+.tabs--active,
+.tabs--active:hover {
+    background-color: #fff;
+    color: #16282e;
+}
+
+.text-paragraphs-container {
+    margin: 0 5px 20px;
+}
+
+.text {
+    background-color: #fff;
+    font-size: 14px;
+}
+
+/*styles for task #2*/
+.input-label {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 5px 0;
+}
+
+.input-label-text {
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+}
+
+input {
+    display: inline-block;
+    width: 50%;
+    margin: 0 5px auto;
+}
+
+.help-text {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    border: 1px solid #f00923;
+    background: #fff;
+    -webkit-filter: drop-shadow(0 0 2px #f00923);
+    filter: drop-shadow(0 0 2px #f00923);
+}
+
+.show-help-texts {
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 5px;
+    background: #f00923;
+    color: #fdfbff;
+    text-align: center;
+    cursor: pointer;
+}
