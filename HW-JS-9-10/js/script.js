@@ -35,5 +35,17 @@
                 $(this).removeClass('active');
             })
             .jcarouselPagination();
+
+        $('select').selectBox({
+            mobile: true,
+            menuTransition: 'fade',
+            menuSpeed: 'normal',
+            loopOptions: true
+        });
+
+        $('select').on('click', function() {
+            $(this).children('option').addClass('.custom-option');
+        });
+
     });
 })(jQuery);
