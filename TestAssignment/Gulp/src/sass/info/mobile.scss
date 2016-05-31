@@ -1,0 +1,262 @@
+& {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color1;
+    font-family: 'PT Sans', sans-serif;
+
+    .flex-block {
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 px(80, $k);
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .header--heading {
+        color: $color2;
+        font-size: px(44, $k);
+        font-weight: bold;
+    }
+
+    .header--divider--horizontal {
+        width: px(60, $k);
+        height: px(6, $k);
+        margin: px(10, $k) auto 0;
+        border-radius: 2px;
+        background-color: $color7;
+    }
+
+    .header--divider--vertical {
+        display: none;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        border: px(2, $k) solid $color6;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .button--white {
+        width: px(376, $k);
+        height: px(96, $k);
+        background: px(26, $k) center no-repeat;
+        background-size: px(40, $k);
+        color: $color6;
+    }
+
+    .button--blue {
+        width: px(376, $k);
+        height: px(96, $k);
+        background: $color6 13px center no-repeat;
+        background-size: px(40, $k);
+        color: $color8;
+    }
+
+    //INTERNET BLOCK
+    .internet {
+        width: px(560, $k);
+        border-bottom: px(6, $k) dotted $color9;
+    }
+
+    .internet .header {
+        height: px(310, $k);
+        margin: px(60, $k) 0 px(44, $k);
+    }
+
+    .header--internet-icon {
+        width: px(136, $k);
+        height: px(160, $k);
+        margin: 0 0 0 px(44, $k);
+    }
+
+    .search-application {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: px(520, $k);
+        height: px(246, $k);
+        margin: 0 0 px(50, $k);
+    }
+
+    .search-application--mobile-text {
+        width: px(380, $k);
+        margin: 0 auto;
+        color: $color3;
+        font-size: px(30, $k);
+        text-align: center;
+    }
+
+    .search-application--desktop-text {
+        display: none;
+    }
+
+    .search-application--download-app {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search-application--download-app-text {
+        width: px(224, $k);
+        padding: px(24, $k) 0 px(36, $k);
+        background: url('../../images/applicationArrows.png') no-repeat;
+        background-size: cover;
+        color: $color3;
+        font-size: px(30, $k);
+        font-weight: 700;
+        line-height: px(30, $k);
+        text-align: center;
+    }
+
+    .search-application--android-icon {
+        width: px(78, $k);
+        padding: px(14, $k) px(18, $k) px(12, $k) px(20, $k);
+        border: px(2, $k) solid $color4;
+        border-radius: px(10, $k);
+    }
+
+    .search-application--apple-icon {
+        width: px(66, $k);
+        padding: px(14, $k) px(26, $k) px(22, $k);
+        border: 1px solid $color5;
+        border-radius: 5px;
+    }
+
+    .watch-online {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: px(228, $k);
+    }
+
+    .watch-online--text {
+        width: px(380, $k);
+        color: $color3;
+        font-size: px(30, $k);
+        text-align: center;
+    }
+
+    .watch-online--button {
+        background-image: url('../../images/videoPlayIcon.svg');
+    }
+
+    .watch-online--button-text {
+        padding: 0 0 px(4, $k) px(92, $k);
+        font-size: px(30, $k);
+    }
+
+    //SATELLITE BLOCK
+    .satellite {
+        align-items: center;
+        width: px(560, $k);
+        border-bottom: px(6, $k) dotted $color9;
+    }
+
+    .satellite .header {
+        height: px(310, $k);
+        margin: px(82, $k) 0 px(46, $k);
+    }
+
+    .header--satellite-icon {
+        width: px(116, $k);
+        height: px(160, $k);
+        margin: 0 px(38, $k) 0 0;
+    }
+
+    .satellite--setup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: px(302, $k);
+        color: $color3;
+        font-size: px(30, $k);
+    }
+
+    .satellite--setup-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .satellite--setup-label {
+        width: 48%;
+        margin: 0 px(22, $k) 0 0;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    .satellite--setup-data {
+        width: 49%;
+        text-align: left;
+    }
+
+    .satellite--setup--desktop-data {
+        display: none;
+    }
+
+    .satellite--setup-video-button {
+        margin: px(28, $k) 0 0;
+        background-image: url('../../images/videoPlayIcon_hover.svg');
+    }
+
+    .satellite--setup-video-button-text {
+        padding: 0 0 px(4, $k) px(80, $k);
+        font-size: px(30, $k);
+    }
+
+    .satellite--setup-video-button-description {
+        display: none;
+    }
+
+    //TV-CABLE BLOCK
+    .tv-cable {
+        width: px(560, $k);
+    }
+
+    .tv-cable .header {
+        height: px(310, $k);
+        margin: px(80, $k) 0 px(50, $k);
+    }
+
+    .header--tv-cable-icon {
+        width: px(140, $k);
+        height: px(164, $k);
+    }
+
+    .tv-cable-operators--text {
+        width: px(520, $k);
+        color: $color3;
+        font-size: px(30, $k);
+        line-height: px(36, $k);
+        text-align: center;
+    }
+
+    .tv-cable-operators-search {
+        margin: px(52, $k) 0 0;
+    }
+
+    .tv-cable-operators-search--button {
+        margin: 0 auto;
+        background-image: url('../../images/findOperatorsIcon.svg');
+    }
+
+    .tv-cable-operators-search-on-map {
+        display: none;
+    }
+
+    .tv-cable-operators-search--button-text {
+        padding: 0 0 px(6, $k) px(98, $k);
+        font-size: px(30, $k);
+    }
+}

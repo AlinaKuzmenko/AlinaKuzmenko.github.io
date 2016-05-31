@@ -1,0 +1,6 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+    $k: .04883;
+    @import '../desktop';
+}

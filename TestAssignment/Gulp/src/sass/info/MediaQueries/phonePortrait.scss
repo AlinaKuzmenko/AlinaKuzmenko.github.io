@@ -1,0 +1,6 @@
+@import '../../mq';
+
+@media #{$phonePortrait} {
+    $k: .15625;
+    @import '../mobile';
+}
