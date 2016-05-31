@@ -1,6 +1,0 @@
-@import '../../mq';
-
-@media #{$desktopWide} {
-    $k: .048782;
-    @import '../desktop';
-}
