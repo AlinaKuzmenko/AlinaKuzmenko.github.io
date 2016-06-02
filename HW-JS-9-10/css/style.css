@@ -3,18 +3,68 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* SLIDE-DOWN MENU */
+.list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+[class="list"] {
+    height: 25px;
+    background-color: #131313;
+}
+
+.list-item {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    line-height: 25px;
+}
+
+[class*="list-item-link"] {
+    color: #e1e1e1;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.sub-list {
+    position: absolute;
+    z-index: 200;
+}
+
+[class*="sub-list-item"] {
+    position: relative;
+    height: 20px;
+    padding: 5px 0;
+}
+
+[class*="sub-list-item-link"] {
+    font-size: 15px;
+}
+
+.sub-sub-list {
+    position: absolute;
+}
+
+/* SELECTS */
 .select-container {
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: 40px;
     left: 0;
     margin: 0 50px 0;
 }
 
+/* CHECKBOXES */
 .inputs-container {
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: 40px;
     right: 0;
     margin: 0 50px 0;
     vertical-align: middle;
@@ -29,7 +79,6 @@ body {
     width: 18px;
     height: 17px;
     background: url("../img/check_radio_sprite.png") 0 center;
-    /*background-size: cover;*/
     vertical-align: middle;
     cursor: pointer;
 }
@@ -38,11 +87,11 @@ body {
     display: none;
 }
 
-
+/* JCAROUSEL*/
 .jcarousel-wrapper {
     position: relative;
     width: 633px;
-    margin: 50px auto;
+    margin: 80px auto;
     border-top: 20px solid #2e2e2e;
     border-right: 100px solid #2e2e2e;
     border-bottom: 30px solid #2e2e2e;
