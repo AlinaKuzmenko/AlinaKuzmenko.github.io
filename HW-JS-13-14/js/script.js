@@ -53,6 +53,7 @@ $(function () {
     $('#test14').on('submit', function () {
         var usersAnswers = [];
         var correctAnswers = [];
+        var score = 0;
 
         // add correct answers to the array
         (function () {
@@ -71,13 +72,41 @@ $(function () {
                 usersAnswers.push( $(this).attr('value') );
             });
         };
-        addUsersAnswers();
 
-        // check if all the questions have answers
+        // clear checkboxes
+        var clearCheckboxes = function () {
+            score = 0;
+
+            $('.answers input:checked').each(function () {
+                $(this).attr('checked', false);
+                $(this).parent().css('backgroundColor', 'transparent');
+                usersAnswers.pop();
+            });
+        };
+
         // check the user's answer to each question with the correct answers
-        // if the answer is correct, make the text color green
-        // if it is incorrect, make the text red
+        $('#check-answers').one('click', function(){
+            addUsersAnswers();
+
+            var i = 0,
+                length = correctAnswers.length;
+
+            for (i; i < length; i++) {
+                if (usersAnswers[i] == correctAnswers[i]) {
+                    score++;
+                }
+            }
+
+            if (score == length) {
+                $('.answers input:checked').each(function () {
+                    $(this).parent().css('backgroundColor', '#9c9');
+                });
+                alert('Congrats! The test is passed!');
+            } else {
+                alert('The test is failed!');
+            }
+
+            clearCheckboxes();
+        });
     });
 });
-
-
