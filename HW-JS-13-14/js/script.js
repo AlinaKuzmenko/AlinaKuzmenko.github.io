@@ -40,73 +40,101 @@ $(function () {
     'use strict';
 
     // HANDLEBARS -->
-    var source = $('#test-template').html();
-
-    var template = Handlebars.compile(source);
-    var html = template(questionsAndAnswers);
+    var source = $('#test-template').html(),
+        template = Handlebars.compile(source),
+        html = template(questionsAndAnswers);
 
     $('#content').html(html);
     // <-- HANDLEBARS //
 
+    // CHECK USER'S ANSWERS
+    var usersAnswers = [];
+    var correctAnswers = [];
+    var score = 0;
 
-    // CHECK ANSWERS
-    $('#test14').on('submit', function () {
-        var usersAnswers = [];
-        var correctAnswers = [];
-        var score = 0;
+    // add correct answers to the array
+    var addCorrectAnswers = function() {
+        var i = 0,
+            questionsNumber = questionsAndAnswers.questions.length;
+        for (i; i < questionsNumber; i++) {
+            var correctAnswer = questionsAndAnswers.questions[i].correctAnswer;
+            correctAnswers.push(correctAnswer);
+        }
+    };
 
-        // add correct answers to the array
-        (function () {
-            var i = 0,
-                questionsNumber = questionsAndAnswers.questions.length;
-
-            for (i; i < questionsNumber; i++) {
-                var correctAnswer = questionsAndAnswers.questions[i].correctAnswer;
-                correctAnswers.push(correctAnswer);
-            }
-        })();
-
-        // add user's answers to the array
-        var addUsersAnswers = function () {
-            $('.answers input:checked').each(function () {
-                usersAnswers.push( $(this).attr('value') );
-            });
-        };
-
-        // clear checkboxes
-        var clearCheckboxes = function () {
-            score = 0;
-
-            $('.answers input:checked').each(function () {
-                $(this).attr('checked', false);
-                $(this).parent().css('backgroundColor', 'transparent');
-                usersAnswers.pop();
-            });
-        };
-
-        // check the user's answer to each question with the correct answers
-        $('#check-answers').one('click', function(){
-            addUsersAnswers();
-
-            var i = 0,
-                length = correctAnswers.length;
-
-            for (i; i < length; i++) {
-                if (usersAnswers[i] == correctAnswers[i]) {
-                    score++;
-                }
-            }
-
-            if (score == length) {
-                $('.answers input:checked').each(function () {
-                    $(this).parent().css('backgroundColor', '#9c9');
-                });
-                alert('Congrats! The test is passed!');
-            } else {
-                alert('The test is failed!');
-            }
-
-            clearCheckboxes();
+    // add user's answers to the array
+    var addUsersAnswers = function () {
+        $('.answers input:checked').each(function () {
+            usersAnswers.push( $(this).attr('value') );
         });
+    };
+
+    //show modal
+    var showSuccessModal = function () {
+        $('#modal').show();
+        $('#notification').html('<p class="success">Congrats! The test is passed!</p>');
+    };
+
+    var showFailModal = function () {
+        $('#modal').show();
+        $('#notification')
+            .html('<p class="fail">The test is failed!</p>')
+    };
+
+    // close modal
+    var closeModal = function () {
+        $('#modal').hide();
+    };
+
+    // clear checkboxes
+    var clearCheckboxes = function () {
+        score = 0;
+
+        $('.answers input:checked').each(function () {
+            $(this).attr('checked', false);
+            usersAnswers.pop();
+        });
+        console.log('usersAnswers', usersAnswers);
+        console.log('score', score);
+    };
+
+    // check the user's answer to each question with the correct answers
+    var checkAnswers = function(){
+
+        addUsersAnswers();
+
+        var i = 0,
+            length = correctAnswers.length;
+        console.log(length);
+
+        for (i; i < length; i++) {
+            if (usersAnswers[i] == correctAnswers[i]) {
+                score++;
+            }
+        }
+
+        if (score == length) {
+            $('.answers input:checked').each(function () {
+            });
+            showSuccessModal();
+        } else {
+            showFailModal();
+        }
+    };
+
+    addCorrectAnswers();
+
+    $('#check-answers').on('click', function () {
+        checkAnswers();
+        clearCheckboxes();
     });
+
+    $('#modal')
+        .click(closeModal)
+        .keypress(function (event) {
+            console.log(event.which);
+            if (event.which == 27) {
+                closeModal();
+            }
+        });
 });
