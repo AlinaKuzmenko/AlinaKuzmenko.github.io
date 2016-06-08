@@ -129,12 +129,5 @@ $(function () {
         clearCheckboxes();
     });
 
-    $('#modal')
-        .click(closeModal)
-        .keypress(function (event) {
-            console.log(event.which);
-            if (event.which == 27) {
-                closeModal();
-            }
-        });
-});
+    $('#modal').click(closeModal);
+ });
