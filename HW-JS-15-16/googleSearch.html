@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="googleSearch.html" class="active">Google Search</a>
+        <a href="pixabaySearch.html">Pixabay Search</a>
+        <div class="searchBar">
+            <script>
+                (function() {
+                    var cx = '012053879744720948849:bz7qq_sd2go';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:searchbox></gcse:searchbox>
+        </div>
+    </nav>
+
+    <div class="searchResults">
+        <gcse:searchresults></gcse:searchresults>
+    </div>
+
+    <script src="js/classes.js"></script>
+    <script src="js/pixabay.js"></script>
+</body>
+</html>
