@@ -1,0 +1,1140 @@
+body,
+div,
+main,
+menu,
+section,
+figure,
+figcaption,
+p,
+img,
+input,
+ul,
+li
+    margin: 0
+    padding: 0
+
+i
+    display: inline-block
+
+ul
+    list-style: none
+
+.highlighted
+    color: #000
+    font-weight: bold
+
+
+.page
+    width: 1000px
+    margin: 0 auto
+    padding: 11px 46px 0 46px
+    font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif
+
+
+/* *** search-button *** */
+.search-button
+    clear: both
+    float: right
+    margin-right: 24px
+    margin-top: 2px
+
+    input
+        background-color: rgba(0, 0, 0, 0)
+        border: 1px solid rgba(0, 0, 0, 0)
+        border-bottom: 1px solid #154467
+        color: #154467
+        font-size: 15px
+        font-style: italic
+
+.bold
+    font-weight: bold
+    color: #000000
+
+
+
+/* *************************** HEADER *************************** */
+header
+    height: 364px
+    .info
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        height: 47px
+        width: 100%
+
+
+        /* ********* CONTACTS ********* */
+        .contacts
+            display: flex
+            align-items: center
+            flex-wrap: nowrap
+            height: 47px
+            width: 330px
+            .phone-icon
+                margin-left: 7px
+                margin-top: 2px
+                margin-right: 1px
+            .phones
+                display: block
+                height: 47px
+                margin-left: 4px
+                margin-top: 4px
+                line-height: 47px
+                text-align: center
+                font-size: 18px
+                letter-spacing: 1.4px
+                color: #5e696d
+
+
+        /* ********* LOGIN ********* */
+        .login
+            display: flex
+            align-items: center
+            flex-wrap: nowrap
+            box-sizing: border-box
+            padding-left: 8px
+            padding-right: 10px
+            height: 28px
+            width: 544px
+            margin: -4px 18px 0 14px
+            border-top: 1px solid #a6c3cf
+            border-radius: 3px
+            box-shadow: 5px 6px 3px -3px rgba(0, 0, 0, 0.4)
+            background: linear-gradient(#1f6787, #0c3357)
+            .man-icon
+                display: inline-block
+                height: 20px
+                width: 17px
+                margin-right: 4px
+                margin-top: 2px
+                background:
+                    image: url('../img/man-icon.png')
+                    position: 0 0
+                    repeat: no-repeat
+                    size: contain
+            input[type=text],
+            input[type=password]
+                display: inline-block
+                padding-left: 5px
+                padding-top: 0
+                height: 18px
+                width: 121px
+                border: 0
+                border-radius: 2px
+                -webkit-box-shadow: 0 0 1px 1px rgba(108,126,140,1)
+                -moz-box-shadow: 0 0 1px 1px rgba(108,126,140,1)
+                box-shadow: 0 0 1px 1px rgba(108,126,140,1)
+                font-size: 12px
+                letter-spacing: .7px
+
+            input[type=password]
+                margin-left: 7px
+            .enter, .registration
+                display: inline-block
+                font-size: 12px
+            .enter
+                padding: 0 5px 0 9px
+                background: rgba(0, 0, 0, 0)
+                border: 0
+                letter-spacing: 0.7px
+                color: #fff
+
+            .registration,
+            .forgot_password
+                display: inline-block
+
+            .registration
+                padding: 0 0 0 4px
+                border-left: 1px solid #fff
+                color: #fff
+                letter-spacing: 0.4px
+                text-decoration: none
+
+            .forgot_password
+                width: 104px
+                margin: 2px 0 0 23px
+                border-bottom: 1px solid #bfbfbf
+                color: #bfbfbf
+                font-size: 12px
+                letter-spacing: 0.6px
+                text-align: justify
+                text-decoration: none
+
+
+        /* ********* RIGHT-ICONS ********* */
+        .icons
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 25px
+            width: 85px
+            margin-top: -2px
+            margin-left: 2px
+            box-sizing: border-box
+            border-radius: 88px
+            border: 2px solid #c2c9cc
+
+            .home-icon,
+            .site-map-icon,
+            .email-icon
+                display: inline-block
+                margin-top: -6px
+
+            .home-icon
+                height: 12px
+                width: 16%
+                margin-top: -7px
+                margin-right: 8px
+                background:
+                    image: url('../img/home-icon.png')
+                    repeat: no-repeat
+                    position: 0 0
+                    size: cover
+
+            .site-map-icon
+                height: 12px
+                width: 18%
+                margin-top: -4px
+                margin-right: 11px
+                background:
+                    image: url('../img/site-map-icon.png')
+                    repeat: no-repeat
+                    position: 0 0
+                    size: cover
+
+            .email-icon
+                height: 10px
+                width: 17%
+                margin-top: -3px
+                margin-right: 2px
+                background:
+                    image: url('../img/email-icon.png')
+                    repeat: no-repeat
+                    position: 0 0
+                    size: cover
+
+
+    /* ********* BANNER ********* */
+    .banner
+        height: 261px
+        width: 100%
+        background:
+            image: url('../img/big-image.jpg')
+            position: 0 0
+            repeat: no-repeat
+            size: cover
+
+
+    /* ********* NAVIGATION ********* */
+    .top-nav
+        height: 34px
+        width: 100%
+        margin: 9px 0 11px 0
+        border: 1px solid rgba(#242b4a, 0.80)
+        border-radius: 3px
+        background: linear-gradient(#505860, #010101)
+        box-shadow: 1px 2px 5px 0 #50525e
+        ul
+            float: left
+            height: 34px
+            width: 748px
+            padding: 3px 0 4px 135px
+            box-sizing: border-box
+            li
+                float: left
+                display: inline-block
+                height: 26px
+                box-sizing: border-box
+                border-radius: 20px
+                text-align: center
+                a
+                    display: inline-block
+                    height: 26px
+                    margin: 0 auto
+                    color: #fff
+                    font-family: sans-serif
+                    font-size: 15px
+                    letter-spacing: .1px
+                    line-height: 26px
+                    text-decoration: none
+                    text-transform: uppercase
+
+            li:nth-child(1)
+                width: 136px
+                padding-left: 8px
+
+            li:nth-child(2)
+                width: 104px
+
+            li:nth-child(3)
+                width: 111px
+
+            li:nth-child(4)
+                width: 94px
+
+            li:nth-child(5)
+                width: 103px
+
+
+            li.active,
+            li:hover
+                background: linear-gradient(#1f6787, #0c3357)
+
+
+    /* ********* CART ********* */
+    .cart
+        float: right
+        position: relative
+        height: 34px
+        width: 250px
+        font-family: sans-serif
+        font-size: 13px
+        letter-spacing: 0.2px
+
+        .cart-icon,
+        .cart-info
+            display: inline-block
+            position: absolute
+
+        .cart-icon
+            top: 8px
+            height: 17px
+            width: 21px
+            background:
+                image: url('../img/cart-icon.png')
+                position: 0 0
+                repeat: no-repeat
+                size: cover
+
+        .cart-info
+            top: 0
+            left: 28px
+
+            .items-number,
+            .total-summ,
+            .number,
+            .summ
+                line-height: 31px
+
+            .items-number,
+            .total-summ
+                color: #fff
+
+            .total-summ
+                margin-left: 3px
+
+            .number,
+            .summ
+                color: #0d5a8f
+
+            .number
+                margin-left: -2px
+
+            .summ
+                margin-left: 10px
+
+
+
+
+
+/* *************************** WRAPPER *************************** */
+/* ********* FILTER SECTION ********* */
+.wrapper
+    //background-color: #0cc
+    //height: 500px
+    .filter
+        height: 150px
+        width: 100%
+        background-color: #fff
+
+        .auto-filter-form,
+        .disc-filter-form,
+        .tyres-filter-form
+            height: 147px
+            border:
+                top: 2px solid #ccc
+                left: 2px solid #ccc
+            border-radius: 20px
+            -webkit-box-shadow: 3px 3px 7px 0 rgba(153,153,153,1)
+            -moz-box-shadow: 3px 3px 7px 0 rgba(153,153,153,1)
+            box-shadow: 3px 3px 7px 0 rgba(153,153,153,1)
+            text-align: center
+
+         /* ********* DISC FILTER FORM ********* */
+        .auto-filter-form
+            float: left
+            width: 452px
+            margin-left: 4px
+            .headings
+                width: 100%
+                .small-heading-discs,
+                .small-heading-tyres
+                    width: 50px
+                    color: #154467
+                    font-size: 11px
+                    font-weight: bold
+                    letter-spacing: 1.5px
+
+                .small-heading-discs
+                    float: left
+                    margin: 5px 0 0 20px
+
+                .small-heading-tyres
+                    float: right
+                    margin: 4px 16px 0 20px
+
+                .big-heading
+                    display: inline-block
+                    width: 180px
+                    margin: 2px 0 0 12px
+                    font-size: 12px
+                    font-weight: bold
+                    color: #154467
+                    letter-spacing: 2.1px
+
+            .discs
+                float: left
+                margin: 0 0 0 17px
+                padding: 0 0 0 0
+            .tyres
+                float: right
+                margin: -2px 0 0 16px
+                padding: 0 0 0 0
+
+            .discs,
+            .tyres
+                width: 46%
+                box-sizing: border-box
+                text-align: left
+                .line
+                    margin: 6px 0 0 1px
+                    .label-name
+                        display: inline-block
+                        width: 67px
+                        margin: 0 0 0 0
+                        padding: 0 13px 0 0
+                        color: #77858b
+                        font-size: 10px
+                        line-height: 8px
+                        letter-spacing: .1px
+                    select.mark,
+                    select.model,
+                    select.complectation
+                        width: 111px
+                    select.year
+                        width: 63px
+                .line:nth-child(3)
+                    margin: 4px 0 0 1px
+
+                .line:nth-child(4)
+                    margin: 2px 0 0 1px
+
+
+
+
+        /* ********* DISC FILTER FORM ********* */
+        .disc-filter-form
+            float: right
+            position: relative
+            width: 296px
+            margin-right: 4px
+            color: #77858b
+
+            .big-heading
+                display: inline-block
+                position: absolute
+                top: 3px
+                left: 8px
+                color: #154467
+                font-size: 12px
+                font-weight: bold
+                letter-spacing: 3.1px
+
+            /* *** disc-filter__left-side *** */
+            .disc-filter__left-side
+                float: left
+                width: 192px
+                margin-top: 20px
+                padding-left: 17px
+                box-sizing: border-box
+
+            .disc-filter__line
+                margin-bottom: 5px
+
+            .disc-filter__line-left
+                float: left
+                width: 100px
+
+            .disc-filter__line-left__text
+                text-align: left
+                font-size: 10px
+                line-height: 1
+
+            .line-left__text1
+                margin-top: 7px
+
+            .disc-filter__line-right
+                float: right
+                width: 75px
+
+            .line-right__select
+                float: left
+
+            .line-right__select--disc-diameter
+                width: 63px
+                margin-top: 2px
+
+            .line-right__select--holes-number
+                width: 55px
+                margin-top: 10px
+
+            .line-right__select--holes-position
+                width: 64px
+                margin-top: 11px
+
+
+            /* *** disc-filter__right-side *** */
+            .disc-filter__right-side
+                float: right
+                width: 103px
+                margin-top: 3px
+                padding: 0 10px 7px 10px
+                border-left: 1px solid #bdc6ca
+                box-sizing: border-box
+
+            .disc-filter__right-side__p:nth-child(1)
+                padding-top: 2px
+
+            .disc-filter__right-side__p:nth-child(1),
+            .disc-filter__right-side__p:nth-child(4)
+                font-size: 10px
+                text-align: left
+
+            .disc-filter__right-side__p:nth-child(2),
+            .disc-filter__right-side__p:nth-child(5)
+                font-size: 8px
+                letter-spacing: 1.8px
+                text-align: left
+
+            .disc-filter__right-side__select-dch
+                display: block
+                width: 63px
+                margin: 3px 0 6px 2px
+                padding-top: 2px
+                font-size: 12px
+
+
+            /* *** search-button--disc-filter *** */
+            .search-button--disc-filter
+                margin: -8px 26px 0 0
+
+
+
+
+
+        /* ********* DISC FILTER FORM ********* */
+
+        .tyres-filter-form
+            display: block
+            position: relative
+            width: 210px
+            margin: 0 313px 0 auto
+            text-align: left
+
+            .big-heading
+                display: inline-block
+                position: absolute
+                top: 3px
+                left: 10px
+                color: #154467
+                font-size: 12px
+                font-weight: bold
+                letter-spacing: 2.1px
+
+            .tyres
+                position: absolute
+                margin: 25px 0 0 13px
+
+            /* *** common styles *** */
+            .tyres__line
+                vertical-align: top
+
+            .tyres__line-label,
+            .tyres__line-selection,
+            .slash,
+            .tyres__line-label-text
+                display: inline-block
+                margin: 1px
+
+            .tyres__line-label
+                font-size: 11px
+                width: 44px
+
+
+            /* *** tyres__line--size *** */
+            .tyres__line--size
+                height: 22px
+                margin: 0 0 3px 0
+
+            .tyres__line-label--size
+                .tyres__line-label-text
+                    margin-top: 5px
+
+            .tyres__line-selection-size
+                margin-bottom: 5px
+
+                .size-selection
+                    width: 56px
+                    font-size: 12px
+
+            .slash
+                margin-left: 2px
+
+
+            /* *** tyres__line--radius *** */
+            .tyres__line-label--radius
+                text-align: right
+
+            .tyres__line--radius
+                height: 20px
+                margin: 0 0 0 0
+            .radius-selection
+                width: 50px
+                box-sizing: border-box
+                padding-left: 0
+                font-size: 12px
+
+
+            /* *** tyres__line--seasons *** */
+            .tyres__line--seasons
+                margin: 0 0 0 0
+
+            .tyres__line-label--season
+                height: 100%
+
+            .checkboxes
+                float: right
+                width: 72%
+                margin-top: 7px
+
+            .checkboxes>label
+                display: block
+                height: 15px
+                position: relative
+
+                input[typer="checkbox"]
+                    position: absolute
+                    top: 0
+                    left: 0
+
+                .season-text
+                    float: right
+                    width: 88%
+                    font-size: 12px
+                .season-text>span
+                    display: inline-block
+                    width: 100%
+                    text-align: left
+
+
+            /* *** search-button--tyres *** */
+            .search-button--tyres
+                margin: -4px 9px 0 0
+
+
+
+
+
+/* ********* MAIN SECTION ********* */
+main
+    padding: 17px 0 0 0
+    font-family: "Lucida Sans Unicode", Arial, sans-serif
+
+/* *** common styles *** */
+.catalogue,
+.brands,
+.items
+    box-sizing: border-box
+
+.menu__name,
+.menu__list__name
+    border: 1px solid #8b979c
+    border-radius: 20px
+
+.menu__name
+    position: relative
+    height: 27px
+    width: 197px
+    -webkit-box-shadow: 2px 3px 3px #bfbfbf
+    -moz-box-shadow: 2px 3px 3px #bfbfbf
+    box-shadow: 2px 3px 3px #bfbfbf
+
+
+.menu__icon
+    display: inline-block
+    position: absolute
+    height: 23px
+    width: 23px
+    background:
+        //color: rgb(36, 37, 112)
+        image: url('../img/catalog-brand-icon.png')
+        position: 0 0
+        size: cover
+        repeat: no-repeat
+    border-radius: 100%
+
+.menu__text
+    float: right
+    font-size: 14px
+    color: #114165
+    line-height: 27px
+    text-transform: uppercase
+
+.menu__list
+    font-size: 14px
+
+.menu__list__name
+    position: relative
+    height: 31px
+    width: 166px
+    margin-bottom: 1px
+    padding-top: 5px
+    box-sizing: border-box
+    font-size: 15px
+    color: #114165
+    text-transform: uppercase
+
+.menu__list__icon
+    position: absolute
+    top: 2px
+    left: 6px
+    height: 23px
+    width: 23px
+    border-radius: 100%
+    background:
+        //color: rgb(36, 37, 112)
+        image: url('../img/catalog-brand-list.png')
+        position: 0 0
+        size: cover
+        repeat: no-repeat
+
+.menu__list__text
+    float: right
+
+.menu__list-item
+    text-transform: capitalize
+    font-size: 0
+
+.menu__list-item-icon
+    height: 8px
+    width: 8px
+    background:
+        image: url('../img/catalog-item.png')
+        position: 0 0
+        repeat: no-repeat
+        size: cover
+
+.menu__list-link
+    display: inline-block
+    margin-left: 12px
+    font-size: 14px
+    color: #114165
+    text-decoration: none
+.menu__list-link:hover
+    font-style: italic
+    font-weight: bold
+    color: #0c3256
+    text-decoration: underline
+
+
+
+
+/* *** catalogue *** */
+.catalogue
+    float: left
+    height: 500px
+    width: 195px
+    //background: #abc
+
+.menu__icon--catalogue
+    top: 1px
+    left: 1px
+
+.menu__name--catalogue
+    margin-top: 4px
+
+.menu__text--catalogue
+    margin-right: 6px
+
+.catalogue
+    .menu__list-item
+        position: relative
+        margin-left: 39px
+        height: 28px
+        line-height: 28px
+
+.menu__list__name--tyres
+    margin-top: 15px
+
+.menu__list__name--discs,
+.menu__list__name--screws
+    margin-top: -4px
+
+.menu__list-item-icon
+    position: absolute
+    top: 7px
+    left: 0
+
+.menu__list__text--tyres
+    margin-right: 83px
+
+.menu__list__text--discs,
+.menu__list__text--screws
+    margin-right: 79px
+
+
+/* *** brands *** */
+.brands
+    float: right
+    height: 500px
+    width: 202px
+    //background: #cab
+
+.menu__name--brands
+    height: 27px
+    width: 199px
+    padding-top: 2px
+
+.menu__icon--brands
+    top: 3px
+    left: 4px
+
+.menu__text--brands
+    margin-right: 103px
+    letter-spacing: 1px
+
+.brands
+    .menu__list--tyres,
+    .menu__list--discs
+        padding-left: 16px
+
+    .menu__list__name
+        width: 151px
+        margin-bottom: 7px
+
+    .menu__list__name--discs
+        margin-top: 7px
+
+    .menu__list__icon--discs
+        top: 2px
+        left: 3px
+        height: 24px
+        width: 24px
+
+    .menu__list__text--tyres
+        margin-right: 66px
+
+    .menu__list__text--discs
+        margin-right: 62px
+
+    .menu__list-item--tyres
+        height: 27px
+    .menu__list-item--discs
+        height: 28px
+
+    .menu__list-item--tyres,
+    .menu__list-item--discs
+        margin-left: 13px
+
+    .checkbox-name
+        display: inline-block
+        padding-left: 12px
+        font-size: 14px
+
+.brands-submit
+    display: block
+    height: 27px
+    margin-top: 13px
+    margin-left: 28px
+    padding: 0 12px
+    box-sizing: border-box
+    border-width: 0
+    border-top: 1px solid #7a95a1
+    border-bottom: 1px solid #7a95a1
+    border-radius: 14px
+    background:
+    background: -webkit-linear-gradient(#1f6787, #0c3357)
+    background: -o-linear-gradient(#1f6787, #0c3357)
+    background: -moz-linear-gradient(#1f6787, #0c3357)
+    background: linear-gradient(#1f6787, #0c3357)
+    color: #fff
+    text-transform: uppercase
+
+
+/* *** items *** */
+/* common styles */
+.items-grid
+    //height: 500px
+    width: 578px
+    margin-left: 210px
+    padding: 16px 29px 5px 24px
+    box-sizing: border-box
+    background: #93a7b0
+    background: -webkit-linear-gradient(#e5e7e8, #93a7b0)
+    background: -o-linear-gradient(#e5e7e8, #93a7b0)
+    background: -moz-linear-gradient(#e5e7e8, #93a7b0)
+    background: linear-gradient(#e5e7e8, #93a7b0)
+    border-top: #f3f4f4
+    border-bottom: #a1b3bb
+    border-radius: 2px
+
+.item
+    float: left
+    height: 197px
+    width: 151px
+    margin-bottom: 26px
+    text-align: center
+
+.item__brand
+    font-size: 17px
+    color: #206988
+    line-height: 17px
+    text-shadow: 0 0 0 #206988
+
+.item__model
+    font-size: 14px
+    color: #1f2528
+    line-height: 14px
+
+.item__img
+    height: 139px
+    width: 151px
+    background:
+        color: #ffffff
+        image: url('../img/tyre-img-goodyear.png')
+        repeat: no-repeat
+        size: contain
+    border: 1px solid #b0b9bc
+    border-radius: 7px
+
+.item__price
+    //padding-top: 5px
+    //padding-left: 13px
+    font-family: "Arial", sans-serif
+    font-weight: bold
+    color: #114165
+    font-style: italic
+    line-height: 18px
+    text-shadow: 0 0 0 #114165
+.item__price__price
+    font-size: 18px
+.item__price__currency
+    font-size: 14px
+
+/* goodyear */
+.item--goodyear
+    margin-right: 34px
+    .item__brand,
+    .item__model
+        padding-left: 6px
+        padding-top: 1px
+    .item__img
+        background:
+            image: url('../img/tyre-img-goodyear.png')
+            position: 48% 0
+    .item__price
+        padding-top: 5px
+        padding-left: 9px
+    .item__price__price
+        padding-left: 5px
+        letter-spacing: 0.5px
+
+/* nokian */
+.item--nokian
+    margin-right: 34px
+    .item__brand
+        padding-left: 6px
+    .item__model
+        padding-left: 6px
+        padding-top: 1px
+    .item__img
+        background:
+            image: url('../img/tyre-img-nokian.png')
+            position: 48% 0
+    .item__price
+        padding-top: 6px
+        padding-left: 9px
+    .item__price__price
+        padding-left: 5px
+        letter-spacing: 0.5px
+
+/* hankook */
+.item--hankook
+    .item__brand
+        padding-left: 6px
+    .item__model
+        padding-left: 1px
+    .item__img
+        background:
+            image: url('../img/tyre-img-hankook.png')
+            position: 48% 0
+    .item__price
+        padding-top: 6px
+        padding-left: 8px
+    .item__price__price
+        padding-left: 5px
+        letter-spacing: 0.5px
+
+
+
+
+/* ********* TRUSTMARKS ********* */
+.trustmarks
+    width: 746px
+    margin: 0 auto
+    padding-top: 40px
+    padding-bottom: 28px
+
+.trustmarks__logo
+    background:
+        repeat: no-repeat
+        size: contain
+    float: left
+    font-size: 0
+
+.trustmarks__logo:nth-child(1)
+    height: 30px
+    width: 92px
+    margin-right: 14px
+    background:
+        image: url('../img/toyo.png')
+        position: 0 7px
+
+.trustmarks__logo:nth-child(2)
+    height: 24px
+    width: 106px
+    margin-right: 14px
+    background:
+        image: url('../img/bridgestone.png')
+        position: 0 6px
+
+.trustmarks__logo:nth-child(3)
+    height: 29px
+    width: 86px
+    margin-right: 16px
+    background:
+        image: url('../img/continental.png')
+        position: 0 6px
+
+.trustmarks__logo:nth-child(4)
+    height: 29px
+    width: 65px
+    margin-right: 13px
+    background:
+        image: url('../img/cooper.png')
+        position: 0 5px
+
+.trustmarks__logo:nth-child(5)
+    height: 23px
+    width: 84px
+    margin-right: 15px
+    background:
+        image: url('../img/avon.png')
+        position: 0 7px
+
+.trustmarks__logo:nth-child(6)
+    height: 31px
+    width: 63px
+    margin-right: 13px
+    background:
+        image: url('../img/tyre-factory.png')
+        position: 0 2px
+
+.trustmarks__logo:nth-child(7)
+    height: 23px
+    width: 68px
+    margin-right: 16px
+    background:
+        image: url('../img/firelli.png')
+        position: 0 8px
+
+.trustmarks__logo:nth-child(8)
+    height: 23px
+    width: 81px
+    background:
+        image: url('../img/dunlop.png')
+        position: 0 8px
+
+
+
+
+
+
+/* ********* FOOTER ********* */
+footer
+    width: 1000px
+    margin: 0 auto
+    padding-top: 13px
+    padding-bottom: 52px
+    background-color: #213a4d
+    border-top: 1px solid #242c3e
+
+.footer__nav
+    width: 340px
+    margin: 0 auto
+    margin-bottom: 18px
+
+.footer__nav__list
+    font-size: 0
+
+.footer__nav__item
+    float: left
+    height: 11px
+    line-height: 11px
+
+.footer__nav__item:nth-child(1)
+    padding-left: 9px
+    padding-right: 10px
+    border-right: 1px solid #7a878f
+
+.footer__nav__item:nth-child(2)
+    padding-left: 12px
+    padding-right: 14px
+    border-left: 1px solid #8d989f
+    border-right: 1px solid #7a878f
+
+.footer__nav__item:nth-child(3)
+    padding-left: 13px
+    padding-right: 12px
+    border-left: 1px solid #8d989f
+    border-right: 1px solid #7a878f
+
+.footer__nav__item:nth-child(4)
+    padding-left: 17px
+    border-left: 1px solid #8d989f
+
+
+.footer__nav__link
+    color: #bec6c9
+    font-size: 14px
+    text-decoration: none
+
+.footer__nav__active-link
+    color: #52abcb
+
+.footer__nav__link:hover
+    color: #52abcb
+
+.copyright
+    width: 190px
+    margin: 0 auto
+    color: #7f4740
+    font-size: 11px
+    letter-spacing: 0.37px
+    text-align: center
+
+/* *** clerfix *** */
+.clearfix:after
+    clear: both
+    display: block
+    content: ''
