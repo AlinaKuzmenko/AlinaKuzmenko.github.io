@@ -1,0 +1,25 @@
+{
+  "name": "JS-HW-21-22-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "phantomjs": "^2.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlinaKuzmenko/JS-HW-21-22-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlinaKuzmenko/JS-HW-21-22-2/issues"
+  },
+  "homepage": "https://github.com/AlinaKuzmenko/JS-HW-21-22-2#readme"
+}
