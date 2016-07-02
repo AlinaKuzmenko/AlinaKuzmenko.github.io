@@ -2,12 +2,13 @@
     position: relative;
     width: 1160px;
     margin: 36px auto 0;
-    
+
     .logo {
         display: block;
+        width: 205px;
         margin-left: 4px;
     }
-    
+
     .social-icons {
         position: absolute;
         top: 12px;
@@ -20,7 +21,7 @@
             width: 8px;
             height: 16px;
             background: url('../images/spriteSocialIcons.png') 0 0 no-repeat;
-            
+
             &:hover {
                 background-position: 0 -19px;
             }
@@ -74,7 +75,7 @@
             }
         }
     }
-    
+
     .nav {
         position: relative;
         height: 54px;
@@ -98,9 +99,9 @@
             display: inline-block;
             margin-left: -1px;
             padding: 19px 40px;
-            border-left: 1px solid $color3;
+            transition: color $transitionDuration;
             border-right: 1px solid $color3;
-            transition: color .3s;
+            border-left: 1px solid $color3;
             color: $color4;
             font-size: 14px;
             text-decoration: none;
@@ -109,10 +110,10 @@
             &:hover {
                 color: $color5;
             }
-            
+
             &.active {
-                border-left: 1px solid $color2;
                 border-right: 1px solid $color2;
+                border-left: 1px solid $color2;
                 background-color: $color2;
                 color: $color4;
             }
