@@ -1,4 +1,4 @@
-var categories_template, animals_template, animal_template
+var categories_template, animals_template, animal_template;
 
 current_category = animals_data.category[0];
 current_animals = current_category.animals[0];
