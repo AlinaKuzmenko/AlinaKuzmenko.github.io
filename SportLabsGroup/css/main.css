@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -186,8 +187,8 @@ table {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 @media (max-width: 767px) {
   .header {
-    background: url("../../images/background-header.jpg") no-repeat;
-    background-position: center center;
+    background: url("../images/background-header.jpg") no-repeat;
+    background-position: cen§ter center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -210,7 +211,7 @@ table {
             height: 5.21512vw; }
         .header .header-top > .container nav {
           display: flex;
-          justify-content: flex-end;
+          justify-content: space-between;
           align-self: flex-end;
           align-items: stretch;
           width: 58.01821vw;
@@ -222,7 +223,7 @@ table {
             -moz-transition: border-bottom 0.2s, color 0.2s;
             -o-transition: border-bottom 0.2s, color 0.2s;
             transition: border-bottom 0.2s, color 0.2s;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 2.3468vw;
             text-decoration: none;
             white-space: nowrap; }
@@ -264,8 +265,8 @@ table {
         font-size: 5.21512vw; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .header {
-    background: url("../../images/background-header.jpg") no-repeat;
-    background-position: center center;
+    background: url("../images/background-header.jpg") no-repeat;
+    background-position: cen§ter center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -288,7 +289,7 @@ table {
             height: 4.13223vw; }
         .header .header-top > .container nav {
           display: flex;
-          justify-content: flex-end;
+          justify-content: space-between;
           align-self: flex-end;
           align-items: stretch;
           width: 45.97108vw;
@@ -300,7 +301,7 @@ table {
             -moz-transition: border-bottom 0.2s, color 0.2s;
             -o-transition: border-bottom 0.2s, color 0.2s;
             transition: border-bottom 0.2s, color 0.2s;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 1.8595vw;
             text-decoration: none;
             white-space: nowrap; }
@@ -340,10 +341,10 @@ table {
       padding: 0 10px; }
       .header .header-bottom > .container p {
         font-size: 5.16529vw; } }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1279px) {
   .header {
-    background: url("../../images/background-header.jpg") no-repeat;
-    background-position: center center;
+    background: url("../images/background-header.jpg") no-repeat;
+    background-position: cen§ter center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -366,7 +367,7 @@ table {
             height: 3.26532vw; }
         .header .header-top > .container nav {
           display: flex;
-          justify-content: flex-end;
+          justify-content: space-between;
           align-self: flex-end;
           align-items: stretch;
           width: 36.32669vw;
@@ -378,7 +379,7 @@ table {
             -moz-transition: border-bottom 0.2s, color 0.2s;
             -o-transition: border-bottom 0.2s, color 0.2s;
             transition: border-bottom 0.2s, color 0.2s;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 1.46939vw;
             text-decoration: none;
             white-space: nowrap; }
@@ -408,10 +409,10 @@ table {
           color: #fff;
           font-size: 1.79593vw;
           text-align: center; } }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .header {
-    background: url("../../images/background-header.jpg") no-repeat;
-    background-position: center center;
+    background: url("../images/background-header.jpg") no-repeat;
+    background-position: cen§ter center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -434,7 +435,7 @@ table {
             height: 3.26532vw; }
         .header .header-top > .container nav {
           display: flex;
-          justify-content: flex-end;
+          justify-content: space-between;
           align-self: flex-end;
           align-items: stretch;
           width: 36.32669vw;
@@ -446,7 +447,7 @@ table {
             -moz-transition: border-bottom 0.2s, color 0.2s;
             -o-transition: border-bottom 0.2s, color 0.2s;
             transition: border-bottom 0.2s, color 0.2s;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 1.46939vw;
             text-decoration: none;
             white-space: nowrap; }
@@ -482,7 +483,7 @@ table {
       width: 195px;
       height: 40px; }
     .header .header-top > .container nav {
-      width: 445px;
+      width: 460px;
       height: 75px; }
       .header .header-top > .container nav a {
         padding: 25px 10px 0;
@@ -508,6 +509,7 @@ table {
       width: 125.16288vw; }
       .about .container h3 {
         position: relative;
+        margin-bottom: 2.60756vw;
         color: #000;
         font-size: 3.65058vw;
         text-align: center; }
@@ -519,7 +521,7 @@ table {
           position: absolute;
           content: "";
           width: 49.54364vw;
-          height: 0.26076vw;
+          height: 2px;
           background-color: #e6e6e6; }
         .about .container h3:after {
           position: absolute;
@@ -529,7 +531,7 @@ table {
           position: absolute;
           content: "";
           width: 49.54364vw;
-          height: 0.26076vw;
+          height: 2px;
           background-color: #e6e6e6; }
       .about .container p {
         padding: 10px 0;
@@ -555,6 +557,7 @@ table {
       width: 99.17357vw; }
       .about .container h3 {
         position: relative;
+        margin-bottom: 2.06612vw;
         color: #000;
         font-size: 2.89256vw;
         text-align: center; }
@@ -566,7 +569,7 @@ table {
           position: absolute;
           content: "";
           width: 39.2562vw;
-          height: 0.20661vw;
+          height: 2px;
           background-color: #e6e6e6; }
         .about .container h3:after {
           position: absolute;
@@ -576,7 +579,7 @@ table {
           position: absolute;
           content: "";
           width: 39.2562vw;
-          height: 0.20661vw;
+          height: 2px;
           background-color: #e6e6e6; }
       .about .container p {
         padding: 10px 0;
@@ -592,7 +595,7 @@ table {
     width: 77.27274vw; }
     .about .container h3:before, .about .container h3:after {
       width: 28.92562vw; } }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1279px) {
   .about {
     padding: 4.89798vw 0;
     background: #fff; }
@@ -602,6 +605,7 @@ table {
       width: 78.36768vw; }
       .about .container h3 {
         position: relative;
+        margin-bottom: 1.63266vw;
         color: #000;
         font-size: 2.28572vw;
         text-align: center; }
@@ -613,7 +617,7 @@ table {
           position: absolute;
           content: "";
           width: 31.02054vw;
-          height: 0.16327vw;
+          height: 2px;
           background-color: #e6e6e6; }
         .about .container h3:after {
           position: absolute;
@@ -623,7 +627,7 @@ table {
           position: absolute;
           content: "";
           width: 31.02054vw;
-          height: 0.16327vw;
+          height: 2px;
           background-color: #e6e6e6; }
       .about .container p {
         padding: 10px 0;
@@ -635,9 +639,9 @@ table {
         display: block;
         width: 48.9798vw;
         margin: 3.26532vw auto 0; } }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .about {
-    padding: 60px 0; }
+    padding: 80px 0 !important; }
     .about {
       padding: 4.89798vw 0;
       background: #fff; }
@@ -647,6 +651,7 @@ table {
         width: 78.36768vw; }
         .about .container h3 {
           position: relative;
+          margin-bottom: 1.63266vw;
           color: #000;
           font-size: 2.28572vw;
           text-align: center; }
@@ -658,7 +663,7 @@ table {
             position: absolute;
             content: "";
             width: 31.02054vw;
-            height: 0.16327vw;
+            height: 2px;
             background-color: #e6e6e6; }
           .about .container h3:after {
             position: absolute;
@@ -668,7 +673,7 @@ table {
             position: absolute;
             content: "";
             width: 31.02054vw;
-            height: 0.16327vw;
+            height: 2px;
             background-color: #e6e6e6; }
         .about .container p {
           padding: 10px 0;
@@ -683,7 +688,7 @@ table {
     .about .container {
       width: 960px; }
       .about .container h3 {
-        padding-bottom: 20px;
+        margin-bottom: 40px;
         font-size: 28px; }
         .about .container h3:before {
           width: 380px;
@@ -738,7 +743,7 @@ table {
           position: absolute;
           content: "";
           width: 49.54364vw;
-          height: 0.26076vw;
+          height: 2px;
           background-color: #ffd418; }
         .projects .container h3:after {
           position: absolute;
@@ -748,7 +753,7 @@ table {
           position: absolute;
           content: "";
           width: 49.54364vw;
-          height: 0.26076vw;
+          height: 2px;
           background-color: #ffd418; }
       .projects .container .projects-list {
         display: flex;
@@ -767,13 +772,13 @@ table {
           text-decoration: none;
           z-index: 10; }
         .projects .container .projects-list a.project1 {
-          background-position: 0 0; }
+          background-position: -1px 0; }
         .projects .container .projects-list a.project2 {
-          background-position: 0 -180px; }
+          background-position: -1px -180px; }
         .projects .container .projects-list a.project3 {
-          background-position: 0 -359px; }
+          background-position: -1px -359px; }
         .projects .container .projects-list a.project4 {
-          background-position: 0 -538px; }
+          background-position: -1px -538px; }
   .projects .container {
     width: 97.52274vw; }
     .projects .container h3:before, .projects .container h3:after {
@@ -816,7 +821,7 @@ table {
           position: absolute;
           content: "";
           width: 39.2562vw;
-          height: 0.20661vw;
+          height: 2px;
           background-color: #ffd418; }
         .projects .container h3:after {
           position: absolute;
@@ -826,7 +831,7 @@ table {
           position: absolute;
           content: "";
           width: 39.2562vw;
-          height: 0.20661vw;
+          height: 2px;
           background-color: #ffd418; }
       .projects .container .projects-list {
         display: flex;
@@ -845,18 +850,18 @@ table {
           text-decoration: none;
           z-index: 10; }
         .projects .container .projects-list a.project1 {
-          background-position: 0 0; }
+          background-position: -1px 0; }
         .projects .container .projects-list a.project2 {
-          background-position: 0 -180px; }
+          background-position: -1px -180px; }
         .projects .container .projects-list a.project3 {
-          background-position: 0 -359px; }
+          background-position: -1px -359px; }
         .projects .container .projects-list a.project4 {
-          background-position: 0 -538px; }
+          background-position: -1px -538px; }
   .projects .container {
     width: 77.27274vw; }
     .projects .container h3:before, .projects .container h3:after {
       width: 28.92562vw; } }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1279px) {
   .projects {
     position: relative;
     padding: 4.89798vw 0;
@@ -894,7 +899,7 @@ table {
           position: absolute;
           content: "";
           width: 31.02054vw;
-          height: 0.16327vw;
+          height: 2px;
           background-color: #ffd418; }
         .projects .container h3:after {
           position: absolute;
@@ -904,7 +909,7 @@ table {
           position: absolute;
           content: "";
           width: 31.02054vw;
-          height: 0.16327vw;
+          height: 2px;
           background-color: #ffd418; }
       .projects .container .projects-list {
         display: flex;
@@ -923,16 +928,16 @@ table {
           text-decoration: none;
           z-index: 10; }
         .projects .container .projects-list a.project1 {
-          background-position: 0 0; }
+          background-position: -1px 0; }
         .projects .container .projects-list a.project2 {
-          background-position: 0 -180px; }
+          background-position: -1px -180px; }
         .projects .container .projects-list a.project3 {
-          background-position: 0 -359px; }
+          background-position: -1px -359px; }
         .projects .container .projects-list a.project4 {
-          background-position: 0 -538px; } }
-@media (min-width: 1200px) {
+          background-position: -1px -538px; } }
+@media (min-width: 1280px) {
   .projects {
-    padding: 60px 0; }
+    padding: 80px 0 !important; }
     .projects {
       position: relative;
       padding: 4.89798vw 0;
@@ -970,7 +975,7 @@ table {
             position: absolute;
             content: "";
             width: 31.02054vw;
-            height: 0.16327vw;
+            height: 2px;
             background-color: #ffd418; }
           .projects .container h3:after {
             position: absolute;
@@ -980,7 +985,7 @@ table {
             position: absolute;
             content: "";
             width: 31.02054vw;
-            height: 0.16327vw;
+            height: 2px;
             background-color: #ffd418; }
         .projects .container .projects-list {
           display: flex;
@@ -999,13 +1004,13 @@ table {
             text-decoration: none;
             z-index: 10; }
           .projects .container .projects-list a.project1 {
-            background-position: 0 0; }
+            background-position: -1px 0; }
           .projects .container .projects-list a.project2 {
-            background-position: 0 -180px; }
+            background-position: -1px -180px; }
           .projects .container .projects-list a.project3 {
-            background-position: 0 -359px; }
+            background-position: -1px -359px; }
           .projects .container .projects-list a.project4 {
-            background-position: 0 -538px; }
+            background-position: -1px -538px; }
     .projects .container {
       width: 960px; }
       .projects .container h3 {
@@ -1044,7 +1049,7 @@ table {
           position: absolute;
           content: "";
           width: 49.54364vw;
-          height: 0.26076vw;
+          height: 2px;
           background-color: #e6e6e6; }
         .contacts .container h3:after {
           position: absolute;
@@ -1054,7 +1059,7 @@ table {
           position: absolute;
           content: "";
           width: 49.54364vw;
-          height: 0.26076vw;
+          height: 2px;
           background-color: #e6e6e6; }
       .contacts .container .contacts-wrapper {
         display: flex;
@@ -1075,15 +1080,15 @@ table {
             display: block;
             position: absolute;
             content: "";
-            width: 32px;
-            height: 32px;
-            background: url("../../images/sprite.png") no-repeat; }
+            width: 33px;
+            height: 33px;
+            background: url("../images/sprite.png") no-repeat; }
           .contacts .container .contacts-wrapper div.address:before {
-            background-position: 0 -765px; }
+            background-position: 0 -764px; }
           .contacts .container .contacts-wrapper div.phone:before {
-            background-position: -35px -765px; }
+            background-position: -35px -764px; }
           .contacts .container .contacts-wrapper div.email:before {
-            background-position: -70px -765px; }
+            background-position: -70px -764px; }
           .contacts .container .contacts-wrapper div span {
             -webkit-user-select: none;
             -khtml-user-select: none;
@@ -1102,6 +1107,7 @@ table {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      width: 100%;
       margin: 5.21512vw auto 0; }
       .contacts .container .contacts-wrapper div {
         display: flex;
@@ -1140,7 +1146,7 @@ table {
           position: absolute;
           content: "";
           width: 39.2562vw;
-          height: 0.20661vw;
+          height: 2px;
           background-color: #e6e6e6; }
         .contacts .container h3:after {
           position: absolute;
@@ -1150,7 +1156,7 @@ table {
           position: absolute;
           content: "";
           width: 39.2562vw;
-          height: 0.20661vw;
+          height: 2px;
           background-color: #e6e6e6; }
       .contacts .container .contacts-wrapper {
         display: flex;
@@ -1171,15 +1177,15 @@ table {
             display: block;
             position: absolute;
             content: "";
-            width: 32px;
-            height: 32px;
-            background: url("../../images/sprite.png") no-repeat; }
+            width: 33px;
+            height: 33px;
+            background: url("../images/sprite.png") no-repeat; }
           .contacts .container .contacts-wrapper div.address:before {
-            background-position: 0 -765px; }
+            background-position: 0 -764px; }
           .contacts .container .contacts-wrapper div.phone:before {
-            background-position: -35px -765px; }
+            background-position: -35px -764px; }
           .contacts .container .contacts-wrapper div.email:before {
-            background-position: -70px -765px; }
+            background-position: -70px -764px; }
           .contacts .container .contacts-wrapper div span {
             -webkit-user-select: none;
             -khtml-user-select: none;
@@ -1195,7 +1201,7 @@ table {
     .contacts .container .contacts-wrapper {
       width: 61.98348vw;
       margin-left: 5.16529vw; } }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1279px) {
   .contacts {
     position: relative;
     padding: 4.89798vw 0;
@@ -1218,7 +1224,7 @@ table {
           position: absolute;
           content: "";
           width: 31.02054vw;
-          height: 0.16327vw;
+          height: 2px;
           background-color: #e6e6e6; }
         .contacts .container h3:after {
           position: absolute;
@@ -1228,7 +1234,7 @@ table {
           position: absolute;
           content: "";
           width: 31.02054vw;
-          height: 0.16327vw;
+          height: 2px;
           background-color: #e6e6e6; }
       .contacts .container .contacts-wrapper {
         display: flex;
@@ -1249,15 +1255,15 @@ table {
             display: block;
             position: absolute;
             content: "";
-            width: 32px;
-            height: 32px;
-            background: url("../../images/sprite.png") no-repeat; }
+            width: 33px;
+            height: 33px;
+            background: url("../images/sprite.png") no-repeat; }
           .contacts .container .contacts-wrapper div.address:before {
-            background-position: 0 -765px; }
+            background-position: 0 -764px; }
           .contacts .container .contacts-wrapper div.phone:before {
-            background-position: -35px -765px; }
+            background-position: -35px -764px; }
           .contacts .container .contacts-wrapper div.email:before {
-            background-position: -70px -765px; }
+            background-position: -70px -764px; }
           .contacts .container .contacts-wrapper div span {
             -webkit-user-select: none;
             -khtml-user-select: none;
@@ -1266,9 +1272,9 @@ table {
             -o-user-select: none;
             user-select: none;
             cursor: default; } }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .contacts {
-    padding: 60px 0; }
+    padding: 80px 0 !important; }
     .contacts {
       position: relative;
       padding: 4.89798vw 0;
@@ -1291,7 +1297,7 @@ table {
             position: absolute;
             content: "";
             width: 31.02054vw;
-            height: 0.16327vw;
+            height: 2px;
             background-color: #e6e6e6; }
           .contacts .container h3:after {
             position: absolute;
@@ -1301,7 +1307,7 @@ table {
             position: absolute;
             content: "";
             width: 31.02054vw;
-            height: 0.16327vw;
+            height: 2px;
             background-color: #e6e6e6; }
         .contacts .container .contacts-wrapper {
           display: flex;
@@ -1322,15 +1328,15 @@ table {
               display: block;
               position: absolute;
               content: "";
-              width: 32px;
-              height: 32px;
-              background: url("../../images/sprite.png") no-repeat; }
+              width: 33px;
+              height: 33px;
+              background: url("../images/sprite.png") no-repeat; }
             .contacts .container .contacts-wrapper div.address:before {
-              background-position: 0 -765px; }
+              background-position: 0 -764px; }
             .contacts .container .contacts-wrapper div.phone:before {
-              background-position: -35px -765px; }
+              background-position: -35px -764px; }
             .contacts .container .contacts-wrapper div.email:before {
-              background-position: -70px -765px; }
+              background-position: -70px -764px; }
             .contacts .container .contacts-wrapper div span {
               -webkit-user-select: none;
               -khtml-user-select: none;
@@ -1358,198 +1364,120 @@ table {
 
 @media (max-width: 767px) {
   .map {
-    height: 45.6323vw;
-    padding: 19.5567vw 0 0 11.73402vw;
-    background: url("../images/background-map.jpg") no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    .map .tooltip {
-      position: relative;
-      width: 26.0756vw;
-      margin: 0 auto;
-      padding: 2.21643vw 1.95567vw;
-      background: #fff;
-      -webkit-box-shadow: rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: rgba(0, 0, 0, 0.25);
-      border-radius: 3px;
-      box-shadow: 0 0 4px #ccc;
-      text-align: center; }
-      .map .tooltip:before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 6.38852vw;
-        left: calc(50% - 2px);
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid #fff; }
-      .map .tooltip span {
-        position: relative;
-        font-size: 2.08605vw;
-        color: #666; }
-        .map .tooltip span:after {
-          display: block;
-          position: absolute;
-          content: "";
-          top: 6.5189vw;
-          left: 46.5%;
-          width: 2.60756vw;
-          height: 2.60756vw;
-          background: url("../../images/sprite.png") no-repeat -105px -765px; } }
+    height: 350px; }
+    .map #map {
+      width: 100%;
+      height: 350px;
+      background-color: #666; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .map {
-    height: 36.15703vw;
-    padding: 15.49587vw 0 0 9.29752vw;
-    background: url("../images/background-map.jpg") no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    .map .tooltip {
-      position: relative;
-      width: 20.66116vw;
-      margin: 0 auto;
-      padding: 1.7562vw 1.54959vw;
-      background: #fff;
-      -webkit-box-shadow: rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: rgba(0, 0, 0, 0.25);
-      border-radius: 3px;
-      box-shadow: 0 0 4px #ccc;
-      text-align: center; }
-      .map .tooltip:before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 5.06198vw;
-        left: calc(50% - 2px);
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid #fff; }
-      .map .tooltip span {
-        position: relative;
+    height: 350px; }
+    .map #map {
+      width: 100%;
+      height: 350px;
+      background-color: #666; } }
+@media (min-width: 980px) and (max-width: 1279px) {
+  .map {
+    height: 350px; }
+    .map #map {
+      width: 100%;
+      height: 350px;
+      background-color: #666; } }
+@media (min-width: 1280px) {
+  .map {
+    height: 350px; }
+    .map #map {
+      width: 100%;
+      height: 350px;
+      background-color: #666; } }
+
+@media (max-width: 767px) {
+  .footer {
+    background-color: #363636;
+    padding: 4.56323vw 0 3.91134vw; }
+    .footer nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 50.19553vw;
+      margin: 0 auto; }
+      .footer nav a {
+        border: 0;
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        -o-transition: color 0.2s;
+        transition: color 0.2s;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 2.08605vw;
+        text-decoration: none; }
+        .footer nav a:hover {
+          color: #fff; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  .footer {
+    background-color: #363636;
+    padding: 3.6157vw 0 3.09917vw; }
+    .footer nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 39.77273vw;
+      margin: 0 auto; }
+      .footer nav a {
+        border: 0;
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        -o-transition: color 0.2s;
+        transition: color 0.2s;
+        color: rgba(255, 255, 255, 0.75);
         font-size: 1.65289vw;
-        color: #666; }
-        .map .tooltip span:after {
-          display: block;
-          position: absolute;
-          content: "";
-          top: 5.16529vw;
-          left: 46.5%;
-          width: 2.06612vw;
-          height: 2.06612vw;
-          background: url("../../images/sprite.png") no-repeat -105px -765px; } }
-@media (min-width: 980px) and (max-width: 1199px) {
-  .map {
-    height: 28.57155vw;
-    padding: 12.24495vw 0 0 7.34697vw;
-    background: url("../images/background-map.jpg") no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    .map .tooltip {
-      position: relative;
-      width: 16.3266vw;
-      margin: 0 auto;
-      padding: 1.38776vw 1.22449vw;
-      background: #fff;
-      -webkit-box-shadow: rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: rgba(0, 0, 0, 0.25);
-      border-radius: 3px;
-      box-shadow: 0 0 4px #ccc;
-      text-align: center; }
-      .map .tooltip:before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 4.00002vw;
-        left: calc(50% - 2px);
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid #fff; }
-      .map .tooltip span {
-        position: relative;
+        text-decoration: none; }
+        .footer nav a:hover {
+          color: #fff; } }
+@media (min-width: 980px) and (max-width: 1279px) {
+  .footer {
+    background-color: #363636;
+    padding: 2.85716vw 0 2.44899vw; }
+    .footer nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 31.4287vw;
+      margin: 0 auto; }
+      .footer nav a {
+        border: 0;
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        -o-transition: color 0.2s;
+        transition: color 0.2s;
+        color: rgba(255, 255, 255, 0.75);
         font-size: 1.30613vw;
-        color: #666; }
-        .map .tooltip span:after {
-          display: block;
-          position: absolute;
-          content: "";
-          top: 4.08165vw;
-          left: 46.5%;
-          width: 1.63266vw;
-          height: 1.63266vw;
-          background: url("../../images/sprite.png") no-repeat -105px -765px; } }
-@media (min-width: 1200px) {
-  .map {
-    height: 350px;
-    padding: 150px 0 0 90px; }
-    .map {
-      height: 28.57155vw;
-      padding: 12.24495vw 0 0 7.34697vw;
-      background: url("../images/background-map.jpg") no-repeat;
-      background-position: center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-      .map .tooltip {
-        position: relative;
-        width: 16.3266vw;
-        margin: 0 auto;
-        padding: 1.38776vw 1.22449vw;
-        background: #fff;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: rgba(0, 0, 0, 0.25);
-        border-radius: 3px;
-        box-shadow: 0 0 4px #ccc;
-        text-align: center; }
-        .map .tooltip:before {
-          display: block;
-          position: absolute;
-          content: "";
-          top: 4.00002vw;
-          left: calc(50% - 2px);
-          width: 0;
-          height: 0;
-          border-left: 5px solid transparent;
-          border-right: 5px solid transparent;
-          border-top: 5px solid #fff; }
-        .map .tooltip span {
-          position: relative;
+        text-decoration: none; }
+        .footer nav a:hover {
+          color: #fff; } }
+@media (min-width: 1280px) {
+  .footer {
+    padding: 30px 0 30px; }
+    .footer {
+      background-color: #363636;
+      padding: 2.85716vw 0 2.44899vw; }
+      .footer nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 31.4287vw;
+        margin: 0 auto; }
+        .footer nav a {
+          border: 0;
+          -webkit-transition: color 0.2s;
+          -moz-transition: color 0.2s;
+          -o-transition: color 0.2s;
+          transition: color 0.2s;
+          color: rgba(255, 255, 255, 0.75);
           font-size: 1.30613vw;
-          color: #666; }
-          .map .tooltip span:after {
-            display: block;
-            position: absolute;
-            content: "";
-            top: 4.08165vw;
-            left: 46.5%;
-            width: 1.63266vw;
-            height: 1.63266vw;
-            background: url("../../images/sprite.png") no-repeat -105px -765px; }
-    .map .tooltip {
-      width: 200px;
-      padding: 17px 15px; }
-      .map .tooltip:before {
-        top: 49px; }
-      .map .tooltip span {
-        font-size: 16px; }
-        .map .tooltip span:after {
-          display: block;
-          position: absolute;
-          content: "";
-          top: 50px;
-          width: 20px;
-          height: 20px; } }
+          text-decoration: none; }
+          .footer nav a:hover {
+            color: #fff; }
+    .footer nav {
+      width: 500px; }
+      .footer nav a {
+        font-size: 20px; } }

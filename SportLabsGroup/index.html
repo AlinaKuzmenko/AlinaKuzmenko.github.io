@@ -86,9 +86,7 @@
             </div>
         </section>
         <section class="map">
-            <div class="tooltip">
-                <span>ул. Владимирская, 45</span>
-            </div>
+            <div id="map"></div>
         </section>
         <footer class="footer">
             <nav>
@@ -98,5 +96,21 @@
                 <a href="#contacts">Контакты</a>
             </nav>
         </footer>
+        <script>
+            function initMap() {
+                var kiev = {lat: 50.448389, lng: 30.514766};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: kiev
+                });
+                var marker = new google.maps.Marker({
+                    position: kiev,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7A0XoVfedbof1V7QqSEqfxYiQ6z2-26g&callback=initMap">
+        </script>
     </body>
 </html>
