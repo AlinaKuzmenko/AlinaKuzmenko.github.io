@@ -37,7 +37,6 @@ var toggleLinkClass = function toggleLinkClass(scroll, navTopLinks) {
 };;'use strict';
 
 var smoothScroll = function smoothScroll(navTopLinks) {
-    console.log(navTopLinks);
     navTopLinks.forEach(function (link) {
         link.addEventListener('click', function (e) {
             e.preventDefault();
