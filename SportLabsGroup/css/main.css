@@ -794,7 +794,7 @@ table {
   .projects {
     position: relative;
     padding: 7.82268vw 0;
-    background: rgba(0, 0, 0, 0.65) url("../../images/background-projects.jpg") no-repeat;
+    background: rgba(0, 0, 0, 0.65) url("../images/background-projects.jpg") no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -902,7 +902,7 @@ table {
   .projects {
     position: relative;
     padding: 6.19835vw 0;
-    background: rgba(0, 0, 0, 0.65) url("../../images/background-projects.jpg") no-repeat;
+    background: rgba(0, 0, 0, 0.65) url("../images/background-projects.jpg") no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1010,7 +1010,7 @@ table {
   .projects {
     position: relative;
     padding: 4.89798vw 0;
-    background: rgba(0, 0, 0, 0.65) url("../../images/background-projects.jpg") no-repeat;
+    background: rgba(0, 0, 0, 0.65) url("../images/background-projects.jpg") no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1116,7 +1116,7 @@ table {
     .projects {
       position: relative;
       padding: 4.89798vw 0;
-      background: rgba(0, 0, 0, 0.65) url("../../images/background-projects.jpg") no-repeat;
+      background: rgba(0, 0, 0, 0.65) url("../images/background-projects.jpg") no-repeat;
       background-position: center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
