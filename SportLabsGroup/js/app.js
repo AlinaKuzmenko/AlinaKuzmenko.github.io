@@ -12,11 +12,6 @@ var changeHeaderColor = function changeHeaderColor() {
         header.classList.remove('smaller');
         navTop.classList.remove('smaller');
     }
-};;"use strict";
-
-window.onscroll = function () {
-    changeHeaderColor();
-    toggleLinkClass();
 };;'use strict';
 
 var setClasses = function setClasses(links, activeLink) {
@@ -43,4 +38,9 @@ var toggleLinkClass = function toggleLinkClass() {
     if (scroll >= 1921) {
         setClasses(navTopLinks, navTopLinks[3]);
     }
-};;"use strict";
+};;"use strict";;"use strict";
+
+window.onscroll = function () {
+    changeHeaderColor();
+    toggleLinkClass();
+};
