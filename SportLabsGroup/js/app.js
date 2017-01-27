@@ -2,12 +2,14 @@
 
 var changeHeaderColor = function changeHeaderColor() {
     var scroll = window.pageYOffset;
-    console.log(scroll + 'px');
+    // console.log(`${scroll}px`);
+    var opacity = 4 + scroll / 10;
+    // console.log(`opacity - ${opacity}`);
 
-    if (scroll === 0) {
-        document.getElementById('header-top').style.backgroundColor = 'rgba(0, 0, 0, 0.35)';
+    if (scroll < 60) {
+        document.getElementById('header-top').style.backgroundColor = 'rgba(54, 54, 54, 0.' + opacity + ')';
     } else {
-        document.getElementById('header-top').style.backgroundColor = '#363636';
+        document.getElementById('header-top').style.backgroundColor = 'rgba(54, 54, 54, 1)';
     }
 };
 

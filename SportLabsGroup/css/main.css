@@ -196,7 +196,7 @@ table {
     .header .header-top {
       position: fixed;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.35);
+      background-color: rgba(54, 54, 54, 0.4);
       z-index: 100; }
       .header .header-top > .container {
         display: flex;
@@ -277,7 +277,7 @@ table {
     .header .header-top {
       position: fixed;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.35);
+      background-color: rgba(54, 54, 54, 0.4);
       z-index: 100; }
       .header .header-top > .container {
         display: flex;
@@ -358,7 +358,7 @@ table {
     .header .header-top {
       position: fixed;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.35);
+      background-color: rgba(54, 54, 54, 0.4);
       z-index: 100; }
       .header .header-top > .container {
         display: flex;
@@ -429,7 +429,7 @@ table {
     .header .header-top {
       position: fixed;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.35);
+      background-color: rgba(54, 54, 54, 0.4);
       z-index: 100; }
       .header .header-top > .container {
         display: flex;
