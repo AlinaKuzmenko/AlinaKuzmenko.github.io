@@ -75,7 +75,6 @@ window.onload = function () {
 
 window.onscroll = function () {
     var scroll = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(navTopLinks);
     changeHeaderColor(scroll);
     toggleLinkClass(scroll, navTopLinks);
 };
