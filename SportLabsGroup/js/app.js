@@ -11,13 +11,35 @@ var changeHeaderColor = function changeHeaderColor(scroll) {
         header.classList.remove('smaller');
         navTop.classList.remove('smaller');
     }
-};;'use strict';
+};;"use strict";
+
+function animate(elem, style, unit, from, to, time, prop) {
+    if (!elem) {
+        return;
+    }
+    var start = new Date().getTime(),
+        timer = setInterval(function () {
+        var step = Math.min(1, (new Date().getTime() - start) / time);
+        if (prop) {
+            elem[style] = from + step * (to - from) + unit;
+        } else {
+            elem.style[style] = from + step * (to - from) + unit;
+        }
+        if (step === 1) {
+            clearInterval(timer);
+        }
+    }, 25);
+    if (prop) {
+        elem[style] = from + unit;
+    } else {
+        elem.style[style] = from + unit;
+    }
+};'use strict';
 
 var setClasses = function setClasses(links, activeLinkTopNav, activeLinkBottomNav) {
     links.forEach(function (e) {
         e.classList.remove('active');
     });
-    console.log(activeLinkTopNav);
     activeLinkTopNav.classList.add('active');
     activeLinkBottomNav.classList.add('active');
 };
@@ -27,11 +49,13 @@ var toggleLinksOnClick = function toggleLinksOnClick(navTopLinks) {
         link.addEventListener('click', function (link) {
             var href = link.target.getAttribute('href');
             var relatedLinks = Array.prototype.slice.call(document.querySelectorAll('a[href=\'' + href + '\']'));
-            console.log(relatedLinks);
+            var sectionId = href.slice(1);
+            var section = document.getElementById(sectionId);
             setClasses(navTopLinks, relatedLinks[0], relatedLinks[1]);
+            // animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, section.offsetTop, 800, true);
         });
     });
-};;"use strict";;'use strict';
+};;'use strict';
 
 function initMap() {
     var kiev = { lat: 50.448389, lng: 30.514766 };
