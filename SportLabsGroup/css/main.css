@@ -1568,31 +1568,31 @@ table {
 
 @media (max-width: 767px) {
   .map {
-    height: 350px; }
+    height: 520px; }
     .map #map {
       width: 100%;
-      height: 350px;
+      height: 520px;
       background-color: #666; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .map {
-    height: 350px; }
+    height: 520px; }
     .map #map {
       width: 100%;
-      height: 350px;
+      height: 520px;
       background-color: #666; } }
 @media (min-width: 980px) and (max-width: 1279px) {
   .map {
-    height: 350px; }
+    height: 520px; }
     .map #map {
       width: 100%;
-      height: 350px;
+      height: 520px;
       background-color: #666; } }
 @media (min-width: 1280px) {
   .map {
-    height: 350px; }
+    height: 520px; }
     .map #map {
       width: 100%;
-      height: 350px;
+      height: 520px;
       background-color: #666; } }
 
 @media (max-width: 767px) {

@@ -47,12 +47,15 @@ var setClasses = function setClasses(links, activeLinkTopNav, activeLinkBottomNa
 var toggleLinksOnClick = function toggleLinksOnClick(navTopLinks) {
     navTopLinks.forEach(function (link) {
         link.addEventListener('click', function (link) {
+            link.preventDefault();
             var href = link.target.getAttribute('href');
             var relatedLinks = Array.prototype.slice.call(document.querySelectorAll('a[href=\'' + href + '\']'));
             var sectionId = href.slice(1);
-            var section = document.getElementById(sectionId);
+            var section = sectionId !== '' ? document.getElementById(sectionId) : document.getElementById('header-top');
+            var scrollFrom = window.pageYOffset;
+            var scrollTo = section.offsetTop - 60;
             setClasses(navTopLinks, relatedLinks[0], relatedLinks[1]);
-            // animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, section.offsetTop, 800, true);
+            animate(document.scrollingElement || document.documentElement, "scrollTop", "", scrollFrom, scrollTo, 700, true);
         });
     });
 };;'use strict';
