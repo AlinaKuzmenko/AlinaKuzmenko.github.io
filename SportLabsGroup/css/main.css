@@ -568,7 +568,8 @@ table {
         height: 40px; }
       .header .header-top > .container nav {
         width: 460px;
-        height: 75px; }
+        height: 75px;
+        padding-top: 29px; }
         .header .header-top > .container nav.smaller {
           padding-top: 35px; }
         .header .header-top > .container nav a {
@@ -1692,7 +1693,7 @@ table {
           border-top: 0.40817vw solid #ffd418; } }
 @media (min-width: 1280px) {
   .footer {
-    height: 90px; }
+    height: 80px !important; }
     .footer {
       height: 7.34697vw;
       background-color: #363636; }
@@ -1728,4 +1729,4 @@ table {
       width: 500px; }
       .footer nav a {
         font-size: 18px;
-        line-height: 90px; } }
+        line-height: 73px; } }

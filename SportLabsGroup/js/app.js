@@ -17,11 +17,12 @@ var setClasses = function setClasses(links, activeLinkTopNav, activeLinkBottomNa
     links.forEach(function (e) {
         e.classList.remove('active');
     });
+    console.log(activeLinkTopNav);
     activeLinkTopNav.classList.add('active');
     activeLinkBottomNav.classList.add('active');
 };
 
-var toggleLinkClass = function toggleLinkClass(scroll, navTopLinks) {
+var toggleLinksOnScroll = function toggleLinksOnScroll(scroll, navTopLinks) {
     if (scroll <= 737) {
         setClasses(navTopLinks, navTopLinks[0], navTopLinks[4]);
     }
@@ -34,13 +35,26 @@ var toggleLinkClass = function toggleLinkClass(scroll, navTopLinks) {
     if (scroll >= 1921) {
         setClasses(navTopLinks, navTopLinks[3], navTopLinks[7]);
     }
+};
+
+var toggleLinksOnClick = function toggleLinksOnClick(navTopLinks) {
+    navTopLinks.forEach(function (link) {
+        link.addEventListener('click', function (link) {
+            var href = link.target.getAttribute('href');
+            var relatedLinks = Array.prototype.slice.call(document.querySelectorAll('a[href=\'' + href + '\']'));
+            console.log(relatedLinks);
+            setClasses(navTopLinks, relatedLinks[0], relatedLinks[1]);
+            // link.preventDefault();
+            // let position = this.getAttribute('data-scrollTo');
+            // window.scroll(0, position);
+        });
+    });
 };;'use strict';
 
 var smoothScroll = function smoothScroll(navTopLinks) {
     navTopLinks.forEach(function (link) {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-
+        link.addEventListener('click', function (link) {
+            link.preventDefault();
             var position = this.getAttribute('data-scrollTo');
             window.scroll(0, position);
         });
@@ -68,12 +82,13 @@ window.onload = function () {
         return navTopLinks = Array.prototype.slice.call(document.getElementsByClassName('nav-link'));
     };
     getNavTopLinks();
-    toggleLinkClass(scroll, navTopLinks);
-    smoothScroll(navTopLinks);
+    // toggleLinksOnScroll(scroll, navTopLinks);
+    // smoothScroll(navTopLinks);
+    toggleLinksOnClick(navTopLinks);
 };
 
 window.onscroll = function () {
     var scroll = window.pageYOffset || document.documentElement.scrollTop;
     changeHeaderColor(scroll);
-    toggleLinkClass(scroll, navTopLinks);
+    // toggleLinksOnScroll(scroll, navTopLinks);
 };
