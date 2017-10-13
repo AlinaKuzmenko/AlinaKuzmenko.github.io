@@ -1,0 +1,207 @@
+@media #{$tabletPortrait} {
+    $m: tabletPortrait;
+
+    @import '../mobile';
+
+    & {
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: px(50, $m) px(106, $m) 0;
+
+        .internet {
+            width: px(640, $m);
+            border: 0;
+
+            h2 {
+                padding: 0 0 0 px(28, $m);
+                color: $color2;
+                font-size: px(50, $m);
+                font-weight: bold;
+
+                &::before {
+                    width: px(162, $m);
+                    height: px(192, $m);
+                    margin: 0 0 px(65, $m) px(210, $m);
+                }
+
+                &::after {
+                    width: px(66, $m);
+                    margin: px(66, $m) 0 0 px(232, $m);
+                }
+            }
+
+            & .mobile {
+                display: none;
+            }
+
+            & .desktop {
+                display: block;
+                width: px(600, $m);
+                margin: px(60, $m) 0 0 px(22, $m);
+                color: $color3;
+                font-size: px(34, $m);
+                line-height: px(46, $m);
+                text-align: center;
+            }
+
+            .app {
+                width: px(566, $m);
+                margin: px(74, $m) 0 0 px(22, $m);
+
+                .android {
+                    width: px(142, $m);
+                    height: px(142, $m);
+                }
+
+                p {
+                    font-size: px(32, $m);
+                }
+
+                .apple {
+                    width: px(146, $m);
+                    height: px(146, $m);
+                }
+            }
+
+            & > p:last-of-type {
+                width: px(600, $m);
+                margin: px(58, $m) 0 0 px(22, $m);
+                color: $color3;
+                font-size: px(34, $m);
+                line-height: px(46, $m);
+                text-align: center;
+            }
+
+            button {
+                width: px(456, $m);
+                height: px(113, $m);
+                margin: px(88, $m) 0 0 px(35, $m);
+                padding: 0 0 0 px(110, $m);
+                background-position: px(45, $m) center;
+                font-size: px(33, $m);
+
+                &:active,
+                &:focus {
+                    background-position: px(45, $m) center;
+                }
+            }
+        }
+
+        .satellite {
+            order: -1;
+            width: px(600, $m);
+            margin: px(60, $m) 0 0;
+            border: 0;
+
+            h2 {
+                padding: 0 px(10, $m) 0 0;
+                color: $color2;
+                font-size: px(50, $m);
+                font-weight: bold;
+
+                &::before {
+                    width: px(136, $m);
+                    height: px(192, $m);
+                    margin: 0 0 px(70, $m) px(150, $m);
+                }
+
+                &::after {
+                    width: px(66, $m);
+                    margin: px(64, $m) 0 0 px(210, $m);
+                }
+            }
+
+            .settings {
+                margin: px(70, $m) 0 0;
+
+                li {
+                    justify-content: flex-start;
+                    height: px(91, $m);
+
+                    span {
+
+                        &:first-child {
+                            width: px(272, $m);
+                            margin: 0 px(33, $m) 0 0;
+                            font-size: px(33, $m);
+                        }
+
+                        &:last-child {
+                            font-size: px(31, $m);
+                        }
+                    }
+                }
+            }
+
+            button {
+                width: px(460, $m);
+                height: px(112, $m);
+                margin: px(37, $m) px(10, $m) 0 0;
+                padding: 0 0 px(4, $m) px(100, $m);
+                background-position: px(36, $m) center;
+                font-size: px(33, $m);
+            }
+        }
+
+        .tv {
+            position: relative;
+            width: 100%;
+            margin: px(160, $m) 0 0;
+            border: 0;
+
+            &::before {
+                display: block;
+                position: absolute;
+                top: px(-106, $m);
+                left: calc(50% - 64px);
+                width: px(254, $m);
+                height: px(200, $m);
+                background-color: $color1;
+                content: '';
+                z-index: 1;
+            }
+
+            h2 {
+                padding: 0;
+                color: $color2;
+                font-size: px(53, $m);
+                font-weight: bold;
+                z-index: 2;
+
+                &::before {
+                    width: px(160, $m);
+                    height: px(192, $m);
+                    margin: px(-140, $m) 0 px(75, $m) px(110, $m);
+                }
+
+                &::after {
+                    width: px(66, $m);
+                    margin: px(70, $m) 0 0 px(150, $m);
+                }
+            }
+
+            p {
+                width: px(1100, $m);
+                margin: px(68, $m) 0 0;
+                font-size: px(34, $m);
+                line-height: px(46, $m);
+            }
+
+            button {
+                display: none;
+            }
+        }
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        top: px(1385, $m);
+        left: 7%;
+        width: 86%;
+        height: px(5, $m);
+        border-bottom: px(9, $m) dotted $color9;
+        content: '';
+    }
+}
